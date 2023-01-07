@@ -7,7 +7,7 @@ import Img2 from '../public/blob.svg'
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-gradient-to-tl from-orange-400 to-orange-50">
+    <div className="h-screen bg-gradient-to-tl from-orange-500 to-orange-50">
         <div className='max-w-[1350px] m-auto h-screen overflow-hidden'>
 
         <div>
@@ -23,8 +23,8 @@ const Hero = () => {
                 <p className='text-xl font-medium px-8 xl:px-10 text-justify '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, tenetur quos tempora soluta facilis fuga inventore!</p>
             </div>
             <div className=' md:w-1/2 relative p-10'>
-                <Image src={Img1} alt="foto di un evento di caffeina politica" className='w-2/3 md:w-4/6 left-8 rounded-xl absolute z-20 drop-shadow-[0_35px_35px_rgba(0,0,0,0.50)]'/>
-                <Image src={Img2} alt="bolla grafica" className='w-[150%] absolute top-[-20%] left-16 z-10'/>
+                <Image src={Img2} alt="bolla grafica" className='w-[150%] absolute top-[-20%] left-16 z-0'/>
+                <Image src={Img1} alt="foto di un evento di caffeina politica" className='w-2/3 md:w-4/6 left-8 rounded-xl absolute z-0 drop-shadow-[0_35px_35px_rgba(0,0,0,0.50)]'/>
             </div>
         </div>
         

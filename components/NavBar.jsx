@@ -6,9 +6,9 @@ import Logo from "../public/logo.png"
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const NavBar = () => {
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(false) //true if nav is open
     
-    const [color, setColor] = useState('transparent')
+    const [color, setColor] = useState('bg-transparent')
     const [textColor, setTextColor] = useState('black')
 
     const handleNav = () => {
@@ -18,76 +18,51 @@ const NavBar = () => {
     useEffect(() => {
         const changeColor = () =>{
             if(window.scrollY >= 30){
-                setColor('#FFFAF2')
-                setTextColor('black')
+                setColor('bg-white')
+                // setTextColor('black')
             } 
             // else if(window.scrollY >= 100 &&window.scrollY < 200){
             //     setColor('#3C323A')
             //     setTextColor('white')
             // }
             else {
-                setColor('transparent')
-                setTextColor('black')
+                setColor('bg-transparent')
+                // setTextColor('black')
             }
         }
         window.addEventListener('scroll', changeColor)
     })
 
     return (
-        <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-50 ease-in duration-300'>
-            <div className='max-w-[1350px] m-auto flex justify-between items-center p-5 pb-1 xl:p-5' >
-                <Link href='/'>
-                <Image src={Logo} alt="logo" className='rounded-xl drop-shadow-2xl w-36 md:w-52'/>
-                    
-                </Link>
-                <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
-                    <li className='p-4'>
+        <div className={`${nav ? " bg-slate-800" : color }  fixed left-0 top-0 w-full ease-in`}>
+            <nav className=" max-w-[1350px] flex flex-wrap lg:flex-row justify-between items-center p-5 lg:p-0 lg:px-5">
+                <div className='w-full lg:w-auto flex lg:block items-center justify-between z-[100]'>
+                    <Link href='/'>
+                        <Image src={Logo} alt="logo" className='rounded-xl drop-shadow-2xl w-36 md:w-52'/>   
+                    </Link>
+                    {
+                        nav ? <AiOutlineClose size={20} className="block text-white lg:hidden" onClick={handleNav}/> 
+                            : <AiOutlineMenu size={20} className="block lg:hidden" onClick={handleNav}/> 
+                    }
+                </div>
+                <ul className={`${!nav ? "hidden " : "" }  bg-slate-800 lg:bg-transparent absolute lg:static lg:flex lg:justify-between lg:items-center left-0 w-full lg:w-auto mt-[20rem] md:mt-[24rem] lg:mt-0 text-white lg:text-black pl-6 py-2 lg:py-4 md:pl-10 lg:p-2 transition-all ease-in duration-300`}>
+                    <li className='p-4 lg:px-10 hover:text-gray-500' onClick={handleNav}>
                         <Link href='/'>Home</Link>
                     </li>
-                    <li className='p-4'>
+                    <li className='p-4 lg:px-10 hover:text-gray-500' onClick={handleNav}>
                         <Link href='/#eventi'>Eventi</Link>
                     </li>
-                    <li className='p-4'>
+                    <li className='p-4 lg:px-10 hover:text-gray-500' onClick={handleNav}>
                         <Link href='/#articoli'>Articoli</Link>
                     </li>
-                    <li className='p-4'>
+                    <li className='p-4 lg:px-10 hover:text-gray-500' onClick={handleNav}>
                         <Link href='/#about-us'>About Us</Link>
                     </li>
-                    <li className='p-4'>
+                    <li className='p-4 lg:px-10 hover:text-gray-500' onClick={handleNav}>
                         <Link href='/#contatti'>Contatti</Link>
                     </li>
                 </ul>
-
-                {/*Mobile Button*/}
-                <div onClick={handleNav} className='block sm:hidden z-50 p-6'>
-                    {nav 
-                    ? <AiOutlineClose className=' text-white' size={30} style={{color: `${!textColor}`}}/> 
-                    : <AiOutlineMenu className=' text-black' size={30}style={{color: `${textColor}`}}/>}
-                </div>
-                {/*Mobile Menu*/}
-                <div className={
-                    nav
-                ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 text-white' 
-                : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300 text-white'}>
-                    <ul>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/'>Home</Link>
-                        </li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#eventi'>Eventi</Link>
-                        </li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#articoli'>Articoli</Link>
-                        </li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#about-us'>About Us</Link>
-                        </li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#contatti'>Contatti</Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </nav>
         </div>
     )
     }
