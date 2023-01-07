@@ -35,7 +35,7 @@ const NavBar = () => {
 
     return (
         <div className={`${nav ? " bg-slate-800" : color }  fixed left-0 top-0 w-full ease-in`}>
-            <nav className=" max-w-[1350px] flex flex-wrap lg:flex-row justify-between items-center p-5 lg:p-0 lg:px-5">
+            <nav className=" max-w-[1350px] m-auto flex flex-wrap lg:flex-row justify-between items-center p-5 lg:p-0 lg:px-5">
                 <div className='w-full lg:w-auto flex lg:block items-center justify-between z-[100]'>
                     <Link href='/'>
                         <Image src={Logo} alt="logo" className='rounded-xl drop-shadow-2xl w-36 md:w-52'/>   
