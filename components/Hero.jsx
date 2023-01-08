@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
             <div className='lg:flex'>
                 <div className='lg:w-1/2'>
-                    <p className='p-2 font-medium text-lg md:text-3xl text-center my-10'>
+                    <p className='p-2 text-lg md:text-3xl text-center my-10'>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur repudiandae esse minima commodi veritatis obcaecati veniam necessitatibus asperiores, id omnis dolor mollitia amet accusantium et? Odio obcaecati provident quidem!
                     </p>
                 </div>
