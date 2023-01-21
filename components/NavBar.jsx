@@ -45,8 +45,8 @@ const NavBar = () => {
                             : <AiOutlineMenu size={20} className="block lg:hidden" onClick={handleNav}/> 
                     }
                 </div>
-                <ul className={`${!nav ? "hidden " : "" }  bg-slate-800 lg:bg-transparent absolute lg:static lg:flex lg:justify-between lg:items-center left-0 w-full lg:w-auto mt-[2rem] md:mt-[4rem] lg:mt-0 text-white text-opacity-80 lg:text-black px-6 py-2 lg:py-4 md:px-10 lg:p-2 transition-all ease-in duration-300`}>
-                    <li className='p-4 lg:px-10 hover:text-gray-500 border-b border-blue-50 lg:border-0' onClick={handleNav}>
+                <ul className={`${!nav ? "hidden " : "" }  bg-slate-800 lg:bg-transparent absolute lg:static lg:flex lg:justify-between lg:items-center left-0 w-full lg:w-auto mt-[20rem] md:mt-[24rem] lg:mt-0 text-white lg:text-black pl-6 py-2 lg:py-4 md:pl-10 lg:p-2 transition-all ease-in duration-300`}>
+                    <li className='p-4 lg:px-10 hover:text-gray-500' onClick={handleNav}>
                         <Link href='/'>Home</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-gray-500 border-b border-blue-50 lg:border-0' onClick={handleNav}>
