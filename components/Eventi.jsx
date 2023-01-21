@@ -1,52 +1,35 @@
 import React from 'react'
 
 import {TbCalendarStats} from 'react-icons/tb'
+import Calendar from './Calendar'
 
 const Eventi = () => {
   return (
-    <div className='bg-[#FFFAF2] h-screen' id='eventi'>
-        <div className='max-w-[1350px] m-auto grid grid-cols-12 gap-4 h-screen'>
-        
-            <div className='border-2 border-red-500 col-span-5 flex items-center'>
-                
-                <div className='w-full bg-slate-800 text-white rounded-xl flex flex-wrap items-center py-5 shadow-lg'>
-                  <div className='flex  justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3 className=''>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
-                  <div className='flex flex-row justify-around p-3 w-1/2'>
-                      <TbCalendarStats size={20} className=""/>
-                      <h3>26 Febbraio</h3>
-                  </div>
+    <section id='eventi' className='bg-slate-50 py-20'>
+        <div className='flex flex-col md:flex-row px-5 items-start'>
+            <div className='flex flex-col md:w-1/2 p-4'>
+                <div className='text-center'>
+                    <h1 className='font-black text-6xl text-blue-900/30 justify-center'>EVENTI</h1>
+                    <h2 className='font-bold text-2xl text-slate-900 '>CALENDARIO</h2>
+                </div>
+                <Calendar />
+            </div>
+            <div className='flex flex-col md:w-1/2 p-4'>
+                <div className='text-center py-8'>
+                    <h1 className='font-black text-6xl text-blue-900/30'>EVENTI</h1>
+                    <h2 className='font-bold text-2xl text-slate-900'>CALENDARIO</h2>
+                </div>
+                <div className='text-center'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, officia, temporibus aut pariatur aliquam veniam velit reiciendis suscipit, blanditiis reprehenderit expedita voluptates commodi eaque corporis dolores amet similique at! Voluptatem.</p>
+                </div>
+                <div className='text-center py-5 text-lg font-medium text-slate-50/90'>
+                    <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-1 px-3 ease-in duration-300'>
+                        Prenotati
+                    </button>
                 </div>
             </div>
-            <div className='border-2 border-red-500 col-span-7'>Prova</div>
         </div>
-    </div>
+    </section>
   )
 }
 

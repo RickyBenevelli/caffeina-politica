@@ -7,27 +7,25 @@ import Img2 from '../public/blob.svg'
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-gradient-to-tl from-orange-500 to-orange-50 flex justify-center items-center overflow-hidden">
-        <div className='max-w-[1350px] m-auto  p-5'>
-            <div>
-                <h1 className='text-slate-800 text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-bold h-1/3 mt-5 py-5'>
-                    Lo spazio di dibattito di Reggio Emilia
-                </h1>
+    <section id='#home' className={`bg-orange-300`}>
+        <div className=' flex flex-col pt-20 lg:pt-[5.5] pb-10 text-slate-900 px-5 lg:px-8'>
+            <div className='font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center py-3 md:py-6'>
+                <h1>Lo Spazio di dibattito di Reggio Emilia</h1>
             </div>
-            <div className='lg:flex'>
-                <div className='lg:w-1/2'>
-                    <p className='p-2 text-lg md:text-3xl text-center my-10'>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tenetur repudiandae esse minima commodi veritatis obcaecati veniam necessitatibus asperiores, id omnis dolor mollitia amet accusantium et? Odio obcaecati provident quidem!
-                    </p>
+            <div className='font-semibold text-xl md:text-3xl lg:text-4xl text-center py-2 md:py-3'>
+                <h2>Da giovani, per giovani</h2>
+            </div>
+            <div className='flex flex-col md:flex-row text-center md:py-5 items-center'>
+                <div className='py-4 font-normal md:text-xl lg:text-2xl xl:text-3xl md:w-1/2 md:px-3 md:leading-relaxed'>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Dolore mque at archit ecto praes entium, conse quatur labo rum nisi eum</p>
                 </div>
-                <div className='lg:w-1/2'>
-                    <Image src={Img1} alt='foto di un evento di caffeina politica' className='rounded-xl shadow-lg static'/>
-                    {/* aggiungere la bolla  */}
+                <div className='md:w-1/2 md:px-3 py-3'>
+                    <Image src={Img1} alt='foto1' className='rounded-xl shadow-md shadow-slate-700'/>
                 </div>
+            </div>
 
-            </div>
         </div>
-    </div>
+    </section>
   )
 }
 
