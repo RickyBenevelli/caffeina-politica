@@ -1,10 +1,11 @@
 import React from 'react'
+import Title from './Title'
 
 const Contatti = () => {
   return (
     <section id='contatti'>
         <div className='py-20'>
-            <h1 className='text-center text-6xl font-bold'>CONTATTI</h1>
+            <Title title='CONTATTI' background='SOCIAL' />
         </div>
     </section>
   )

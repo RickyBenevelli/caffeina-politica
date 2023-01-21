@@ -20,7 +20,7 @@ const Hero = () => {
                     <p>Lorem ipsum dolor sit amet conse ctetur adipis icing elit. Dolore mque at archit ecto praes entium, conse quatur labo rum nisi eum</p>
                 </div>
                 <div className='md:w-1/2 md:px-3 py-3'>
-                    <Image src={Img1} alt='foto1' className='rounded-xl shadow-md shadow-slate-700'/>
+                    <Image src={Img1} alt='foto1' className='rounded-xl shadow-md shadow-black'/>
                 </div>
             </div>
 
