@@ -34,8 +34,9 @@ const NavBar = () => {
     })
 
     return (
+        // ${((window.scrollY >= 30) && !nav)? "py-2" : ""}
         <div className={`${nav ? color : color }  fixed left-0 top-0 w-full ease-in`}>
-            <nav className={`${nav ? "max-lg:bg-slate-800 h-screen items-start lg:h-auto lg:items-center" : "items-center" } max-w-[1350px] m-auto flex flex-wrap lg:flex-row justify-between  p-5 lg:p-0 lg:px-5`}>
+            <nav className={`${nav ? "max-lg:bg-slate-800 h-screen items-start lg:h-auto lg:items-center" : "items-center" } max-w-[1350px] m-auto flex flex-wrap lg:flex-row justify-between  p-5  lg:p-0 lg:px-5`}>
                 <div className='w-full lg:w-auto flex lg:block items-center justify-between z-[100]'>
                     <Link href='/'>
                         <Image src={Logo} alt="logo" className='rounded-xl shadow-sm shadow-zinc-900 w-36 md:w-52'/>   

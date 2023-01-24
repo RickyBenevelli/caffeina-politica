@@ -5,27 +5,26 @@ import Card from './Card.jsx'
 import Title from './Title'
 
 
-const Articoli = () => {
+const Articoli = ({posts}) => {
   return (
-    <section id='articoli' className='bg-slate-900 w-full '>
-        <div className="flex flex-col bg-white m-auto p-auto">
-            <Title title='ARTICOLI' background='NEWS' />
-            <div className="flex overflow-x-scroll pb-10 scrollbar-hide snap-x">
+    <section id='articoli' className='bg-slate-900 w-full h-[35rem] flex flex-col m-auto p-auto justify-center'>
+            
+        <div className='text-center h-20 mx-auto flex items-center justify-center py-10'>
+            <h1 className='absolute flex items-center justify-center font-black text-6xl text-white opacity-10'>NEWS</h1>
+            <h2 className='absolute flex items-center justify-center font-bold text-2xl text-[#F5F5F7]'>ARTICOLI</h2>
+        </div>
+            <div className="flex overflow-x-scroll py-10 scrollbar-hide snap-x">
                 <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 snap-x">
-                    <Card />
-
-                    <Card />
-
-                    <Card />
-
-                    <Card />
-
-                    <Card />
                     
-                    <Card />
+                  {
+                    posts.map((post) => (
+                      <Card className="snap-center" key={post.slug} post={post} />
+                    ))
+                  }
+
                 </div>
             </div>
-        </div>
+
     </section>
   )
 }

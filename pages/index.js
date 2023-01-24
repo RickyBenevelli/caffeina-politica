@@ -10,9 +10,15 @@ import AboutUs from '../components/AboutUs'
 import Footer from '../components/Footer'
 import Contatti from '../components/Contatti'
 
+import {postsPath, postFileNames} from '../utils'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({posts}) {
+console.log(posts)
   return (
     <>
       <Head>
@@ -23,10 +29,24 @@ export default function Home() {
       </Head>
       <Hero/>
       <Eventi/>
-      <Articoli/>
+      <Articoli posts={posts}/>
       <AboutUs/>
       <Contatti />
       <Footer />
     </>
   )
+}
+
+export async function getStaticProps() {
+  const posts = postFileNames.map((file) => {
+    const content = fs.readFileSync(path.join(postsPath, `${file}`));
+    const { data } = matter(content);
+    return {
+      frontmatter: data,
+      slug: file.replace(/\.mdx?$/, ''),
+    };
+  });
+  return {
+    props: { posts: JSON.parse(JSON.stringify(posts)) },
+  };
 }
