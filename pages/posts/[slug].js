@@ -11,8 +11,10 @@ import matter from 'gray-matter'
 
 const PostPage = ({mdxSource, frontmatter, slug}) => {
   return (
-    <div className='py-20 max-w-4xl m-auto'>
-        <Post mdxSource={mdxSource} frontmatter={frontmatter} slug={slug}/>
+    <div className='bg-slate-100'>
+        <div className='pt-24 max-w-5xl m-auto'>
+            <Post mdxSource={mdxSource} frontmatter={frontmatter} slug={slug}/>
+        </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Title from './Title'
 
 const Eventi = () => {
   return (
-    <section id='eventi' className='bg-slate-50 py-10'>
+    <section id='eventi' className='bg-slate-50 py-10 lg:py-16'>
         <div className='flex flex-col md:flex-row px-5 items-center md:items-start'>
             <div className='flex flex-col md:w-1/2 p-4 items-center'>
                 <Title background="EVENTI" title="CALENDARIO"/>

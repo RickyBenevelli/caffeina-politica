@@ -6,8 +6,8 @@ import CalendarData from './CalendarData'
 
 const Calendar = () => {
   return (
-    <div className='bg-[#3C323A] text-slate-50 flex flex-row items-start justify-around rounded-xl p-2'>
-        <div className='flex flex-col items-start justify-between'>
+    <div className='bg-[#3C323A] text-slate-50 flex flex-row items-start justify-around rounded-xl p-3'>
+        <div className='flex flex-col items-start justify-between lg:px-5'>
             
             <CalendarData data="26 febbraio" />
             <CalendarData data="26 marzo"/>
@@ -17,7 +17,7 @@ const Calendar = () => {
             
         </div>
 
-        <div className='flex flex-col items-start justify-between '>
+        <div className='flex flex-col items-start justify-between lg:px-5'>
             
             <CalendarData data="24 settembre"/>
             <CalendarData data="29 ottobre"/>

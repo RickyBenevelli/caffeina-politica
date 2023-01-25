@@ -20,7 +20,7 @@ const Hero = () => {
                     <p className='leading-relaxed '>Domande, dubbi, dati, dibattiti, idee divergenti, confronto rispettoso: tutto questo è Caffeina Politica, il posto dove esprimere le proprie idee e confrontarsi con tutti i presenti in modo vero, concreto, senza ideologismi.</p>
                 </div>
                 <div className='md:w-1/2 md:px-3 py-3'>
-                    <Image src={Img1} alt='foto1' className='rounded-xl shadow-md shadow-black'/>
+                    <Image src={Img1} alt='foto1' className='rounded-xl shadow-md shadow-black' priority/>
                 </div>
             </div>
 
