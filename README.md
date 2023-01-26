@@ -54,5 +54,5 @@ Folder `public/profiles` contains the photos of the authors. These photos have t
 BUGS:
 - [ ] quando si è in fondo nella pagina e si aggiorna la scheda la navbar diventa trasparente: trovare un'altra proprietà js da controllare e non scrollY
 - [x] i titoli si sovrappongono alla navbar
-- [ ] il footer non appare
+- [x] il footer non appare
 - [ ] quando clicco su una pagina, il titolo della pagina viene coperto

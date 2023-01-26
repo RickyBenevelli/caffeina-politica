@@ -11,9 +11,9 @@ const components = {
 
 const Post = ({mdxSource, frontmatter, slug, readingTime}) => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col px-4'>
         <PostHeading frontmatter={frontmatter} readingTime={readingTime}/>
-        <div className='prose prose-2xl'>
+        <div className='prose xl:prose-xl m-auto'>
           <MDXRemote {...mdxSource} components={components}/>
         </div>
     </div>

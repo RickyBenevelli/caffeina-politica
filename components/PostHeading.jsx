@@ -8,17 +8,17 @@ const PostHeading = ({ frontmatter, readingTime }) => {
   return (
     <div>
       <div className="flex flex-row justify-between items-center p-1">
-        <div>
+        <div className="hidden md:block">
           <Link href={"/#articoli"}>
-            <BsFillArrowLeftCircleFill size={40} className="text-slate-800" />
+            <BsFillArrowLeftCircleFill size={40} className="text-gray-700/80" />
           </Link>
         </div>
-        <div className="font-semibold text-6xl">{frontmatter.title}</div>
+        <div className="font-semibold text-3xl lg:text-6xl">{frontmatter.title}</div>
         <div className="flex flex-col items-end">
-          <div className="px-2">
+          <div className="px-2 text-sm">
             {dayjs(frontmatter.date).format("D/MM/YYYY")}
           </div>
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center text-sm">
             <CiTimer size={18} />
             <div className="px-2">{readingTime}</div>
           </div>
