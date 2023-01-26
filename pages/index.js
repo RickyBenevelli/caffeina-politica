@@ -10,7 +10,7 @@ import AboutUs from '../components/AboutUs'
 import Footer from '../components/Footer'
 import Contatti from '../components/Contatti'
 
-import {postsPath, postFileNames} from '../utils'
+import {postsPath, postFileNames, sortByDate} from '../utils'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -18,7 +18,7 @@ import matter from 'gray-matter'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({posts}) {
-console.log(posts)
+// console.log(posts)
   return (
     <>
       <Head>
@@ -47,6 +47,6 @@ export async function getStaticProps() {
     };
   });
   return {
-    props: { posts: JSON.parse(JSON.stringify(posts)) },
+    props: { posts: JSON.parse(JSON.stringify(posts)).sort(sortByDate) },
   };
 }

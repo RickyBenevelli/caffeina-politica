@@ -13,8 +13,14 @@ const Eventi = () => {
                 <Calendar />
             </div>
             <div className='flex flex-col md:w-1/2 p-4'>
-                <Title background="EVENTI" title="SVOLGIMENTO"/>
-                <div className='text-center'>
+                <Title background="EVENTO" title="PROSSIMO"/>
+                <div className='text-center font-semibold text-xl py-2 text-slate-800'>
+                Elezioni e disaffezione: perché gli italiani non votano più sinistra?
+                </div>
+                <div className='text-center text-lg py-1'>
+                    Ospite: Delrio
+                </div>
+                <div className='text-center text-xl text-slate-900'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, officia, temporibus aut pariatur aliquam veniam velit reiciendis suscipit, blanditiis reprehenderit expedita voluptates commodi eaque corporis dolores amet similique at! Voluptatem.</p>
                 </div>
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>

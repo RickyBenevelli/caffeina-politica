@@ -2,6 +2,7 @@ import React from 'react'
 import { postFileNames, postsPath } from '../../utils'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
+import readingTime from 'reading-time'
 
 import Post from '../../components/Post'
 
@@ -9,11 +10,12 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const PostPage = ({mdxSource, frontmatter, slug}) => {
+const PostPage = ({mdxSource, frontmatter, slug, readingTime}) => {
+    console.log(readingTime)
   return (
     <div className='bg-slate-100'>
         <div className='pt-24 max-w-5xl m-auto'>
-            <Post mdxSource={mdxSource} frontmatter={frontmatter} slug={slug}/>
+            <Post mdxSource={mdxSource} frontmatter={frontmatter} slug={slug} readingTime={readingTime}/>
         </div>
     </div>
   )
@@ -42,6 +44,8 @@ export async function getStaticProps({params: {slug}}) {
             mdxSource,
             frontmatter: JSON.parse(JSON.stringify(frontmatter)),
             slug,
+            readingTime: readingTime(fileContent).text
+            // change to readingTime: readingTime(fileContent).minutes
         },
     }
 }
