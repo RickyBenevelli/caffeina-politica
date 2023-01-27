@@ -9,23 +9,23 @@ const Contatti = () => {
     <section id="contatti">
       <div className="py-10 flex flex-col items-center">
         <Title title="CONTATTI" background="SOCIAL" />
-        <div className="flex flex-row w-1/2 justify-between py-10 text-slate-800">
+        <div className="flex flex-col md:flex-row w-1/2 justify-between py-10 text-slate-800">
           <Link href={"https://www.instagram.com/caffeina_politica/"}>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center my-5">
               <FaInstagram size={40} />
-              <p className="text-xs">@caffeina_politica</p>
+              <p className="text-xs py-2">@caffeina_politica</p>
             </div>
           </Link>
           <Link href={"https://t.me/CaffeinaPolitica"}>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center my-5">
               <FaTelegramPlane size={40} />
-              <p className="text-xs">t.me/CaffeinaPolitica</p>
+              <p className="text-xs py-2">t.me/CaffeinaPolitica</p>
             </div>
           </Link>
           <Link href={"caffeina.politica@gmail.com"}>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center my-5">
               <FiMail size={40} />
-              <p className="text-xs">caffeina.politica@gmail.com</p>
+              <p className="text-xs py-2">caffeina.politica@gmail.com</p>
             </div>
           </Link>
         </div>

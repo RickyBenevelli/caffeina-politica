@@ -31,18 +31,21 @@ Folder `public/profiles` contains the photos of the authors. These photos have t
 - [x] ordinare le date
 - [x] formattare le date
 - [x] componenti react dentro mdx
-- [ ] sezione about us
-- [ ] sezione social
-- [ ] componente bibliografia
-- [ ] navbar
+- [x] sezione about us
+- [x] sezione social
+- [x] componente bibliografia
+- [x] navbar
 - [ ] responsive
 - [x] footer
-- [ ] configurare pagina 404
+- [x] configurare pagina 404
+- [ ] bolla nella homepage
 
 - [ ] pagina eventi passati e link agli eventi sulle date del calendario
 
 - [ ] animazioni (:hover)
 - [ ] transizioni
+- [ ] cercare un posto dove hostarlo
+- [ ] ottimizzazioni SEO
 - [ ] mandarlo a benni per correzione colori
 - [ ] mandarlo a stefano per avere un parere
 - [ ] ridurre il peso delle immagini
