@@ -10,10 +10,10 @@ const PostHeading = ({ frontmatter, readingTime }) => {
       <div className="flex flex-row justify-between items-center p-1">
         <div className="hidden md:block">
           <Link href={"/#articoli"}>
-            <BsFillArrowLeftCircleFill size={40} className="text-gray-700/80" />
+            <BsFillArrowLeftCircleFill size={40} className="text-gray-700/80 hover:text-gray-700" />
           </Link>
         </div>
-        <div className="font-semibold text-3xl lg:text-6xl">{frontmatter.title}</div>
+        <div className="font-semibold text-3xl lg:text-6xl text-gray-900">{frontmatter.title}</div>
         <div className="flex flex-col items-end">
           <div className="px-2 text-sm">
             {dayjs(frontmatter.date).format("D/MM/YYYY")}

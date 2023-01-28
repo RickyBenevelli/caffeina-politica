@@ -52,6 +52,7 @@ Folder `public/profiles` contains the photos of the authors. These photos have t
 - [ ] articoli suggeriti in fondo all'articolo
 - [ ] dark mode (forse non ha senso)
 - [ ] tab search
+- [ ] commentare tutto il codice e documentare
 
 
 BUGS:
@@ -59,3 +60,15 @@ BUGS:
 - [x] i titoli si sovrappongono alla navbar
 - [x] il footer non appare
 - [ ] quando clicco su una pagina, il titolo della pagina viene coperto
+
+
+- [ ] logo dentro un cerchio, scritta grande con "Caffeina Politica"
+x [ ] valutare se mettere i paragrafi giustificati a sinistra
+- [ ] calendario alto fino al bottone
+- [ ] cambiare il mindset dei titoli
+- [ ] bolle diverse? (dinamiche?)
+- [ ] parallax
+x [ ] sfumatura alla navbar?
+- [ ] font firma? sacramento reenie beanie (scrivere sull'ipad e importarlo come svg)
+- [x] freccia bibbliografia senza sfondo (Hi...) basso e alto
+- [ ] text decoration? (wawy)

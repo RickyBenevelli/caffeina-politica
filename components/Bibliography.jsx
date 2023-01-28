@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BsArrowDownRight } from "react-icons/bs";
 import { BsFillArrowRightSquareFill, BsFillArrowDownSquareFill } from "react-icons/bs";
+import { HiArrowSmUp } from "react-icons/hi";
 
 const Bibliography = ({ children }) => {
   const [show, setShow] = useState(false);
@@ -11,16 +11,13 @@ const Bibliography = ({ children }) => {
   return (
     <div className="w-full bg-slate-500 rounded-md p-2 shadow-lg">
       <div className=" text-slate-50 flex flex-row items-center justify-start text-sm" onClick={handleShow}>
-        <BsFillArrowRightSquareFill size={20} className={`${show? "hidden" : ""}`}/>
-        <BsFillArrowDownSquareFill size={20} className={`${show? "" : "hidden"}`}/>
+        <HiArrowSmUp size={20} className={`${show? "" : "rotate-180"} transition-transform duration-500`}/>
         <span className="ml-2">Bibliography</span>
       </div>
-      {show ? (
-        <div className=" text-slate-100 text-xs lg:text-sm">
+        <div className={`text-slate-100 text-xs lg:text-sm ${show? "" : "hidden"} transition-all duration-1000`}>
           <hr className=" my-2" />
           {children}
         </div>
-      ) : null}
     </div>
   );
 };
