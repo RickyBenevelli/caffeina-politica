@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 
 import {TbCalendarStats} from 'react-icons/tb'
 import Calendar from './Calendar'
@@ -6,7 +7,7 @@ import Title from './Title'
 
 const Eventi = () => {
   return (
-    <section id='eventi' className='bg-slate-50 py-10 lg:py-16'>
+    <Element name='eventi' className='bg-slate-50 py-10 lg:py-16'>
         <div className='flex flex-col md:flex-row px-5 items-center md:items-start'>
             <div className='flex flex-col md:w-1/2 p-4 items-center'>
                 <Title background="EVENTI" title="CALENDARIO"/>
@@ -30,7 +31,7 @@ const Eventi = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </Element>
   )
 }
 

@@ -45,23 +45,24 @@ Folder `public/profiles` contains the photos of the authors. These photos have t
 - [ ] animazioni (:hover)
 - [ ] transizioni
 - [ ] cercare un posto dove hostarlo
-- [ ] ottimizzazioni SEO
-- [ ] mandarlo a benni per correzione colori
+x [ ] ottimizzazioni SEO
+- [x] mandarlo a benni per correzione colori
 - [ ] mandarlo a stefano per avere un parere
 - [ ] ridurre il peso delle immagini
-- [ ] articoli suggeriti in fondo all'articolo
+- [x] articoli suggeriti in fondo all'articolo
 - [ ] dark mode (forse non ha senso)
 - [ ] tab search
 - [ ] commentare tutto il codice e documentare
 
 
-BUGS:
+### BUGS:
 - [ ] quando si è in fondo nella pagina e si aggiorna la scheda la navbar diventa trasparente: trovare un'altra proprietà js da controllare e non scrollY
 - [x] i titoli si sovrappongono alla navbar
 - [x] il footer non appare
 - [ ] quando clicco su una pagina, il titolo della pagina viene coperto
+- [ ] perché il sito non è indicizzato?
 
-
+### SUGGERIMENTI BENNI
 - [ ] logo dentro un cerchio, scritta grande con "Caffeina Politica"
 x [ ] valutare se mettere i paragrafi giustificati a sinistra
 - [ ] calendario alto fino al bottone

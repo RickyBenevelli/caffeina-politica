@@ -1,10 +1,11 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import Presentazione from './Presentazione'
 import Title from './Title'
 
 const AboutUs = () => {
   return (
-    <section id='about-us' className='bg-slate-50'>
+    <Element name='about-us' className='bg-slate-50'>
         <div className='pt-10 lg:px-5 max-w-[1350px] m-auto'>
             <Title title='ABOUT' background='US' />
 
@@ -13,7 +14,7 @@ const AboutUs = () => {
             <Presentazione reverse={false} image={"/profiles/profilo2.jpeg"}/>
             <Presentazione reverse={true} image={"/profiles/profilo5.jpeg"}/>
         </div>
-    </section>
+    </Element>
   )
 }
 
