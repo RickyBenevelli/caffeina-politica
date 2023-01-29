@@ -61,6 +61,7 @@ x [ ] ottimizzazioni SEO
 - [x] il footer non appare
 - [ ] quando clicco su una pagina, il titolo della pagina viene coperto
 - [ ] perché il sito non è indicizzato?
+- [ ] se sono su un articolo e clicco su un link del menu non torno alla pagina principale
 
 ### SUGGERIMENTI BENNI
 - [ ] logo dentro un cerchio, scritta grande con "Caffeina Politica"
