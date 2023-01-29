@@ -34,32 +34,32 @@ const NavBar = () => {
     })
 
     return (
-        <div className={`${nav ? color : color }  fixed left-0 top-0 w-full transition-all duration-200 ease-in z-50`}>
-            <nav className={`${nav ? "max-lg:bg-slate-700 h-screen items-start lg:h-auto lg:items-center" : "items-center" } max-w-[1350px] m-auto flex flex-wrap lg:flex-row justify-between  p-5  lg:p-0 lg:px-5`}>
-                <div className='w-full lg:w-auto flex lg:block items-center justify-between z-[100]'>
+        <div className={`${ color }  fixed left-0 top-0 w-full transition-all duration-200 ease-in z-50`}>
+            <nav className={`${nav ? "max-lg:bg-slate-700" : ""} flex flex-col lg:flex-row m-auto justify-between items-center p-5 lg:px-5 max-w-[1350px]`}>
+                <div className={`w-full flex lg:w-auto items-center justify-between ${nav ? "max-lg:pb-4" : ""}`}>
                     <Link href='/'>
                         <Image src={Logo} alt="logo" className='rounded-xl shadow-md shadow-gray-900 w-36 md:w-52 hover:shadow-lg hover:shadow-gray-900'/>
                     </Link>
                     {
-                        nav ? <AiOutlineClose size={20} className="block text-white lg:hidden" onClick={handleNav}/> 
+                        nav ? <AiOutlineClose size={20} className="block text-slate-100 lg:hidden" onClick={handleNav}/> 
                             : <AiOutlineMenu size={20} className="block lg:hidden" onClick={handleNav}/> 
                     }
                 </div>
-                <ul className={`${!nav ? "hidden " : "" }  bg-slate-700 lg:bg-transparent absolute lg:static lg:flex lg:justify-between lg:items-center left-0 w-full lg:w-auto mt-[2rem] md:mt-[4rem] lg:mt-0 text-white text-opacity-80 lg:text-black px-6 py-2 lg:py-4 md:px-10 lg:p-2 transition-all ease-in duration-300`}>
-                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-blue-50 lg:border-0 cursor-pointer' onClick={handleNav}>
-                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={200}>Home</Link>
+                <ul className={`${nav ? "" : "max-lg:hidden" } flex flex-col items-center max-lg:text-slate-100 lg:flex-row max-lg:w-5/6 text-left`}>
+                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
+                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={200} onClick={handleNav}>Home</Link>
                     </li>
-                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-blue-50 lg:border-0 cursor-pointer' onClick={handleNav}>
-                        <Link activeClass="active" to="eventi" spy={true} smooth={true} offset={-80} duration={200}>Eventi</Link>
+                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
+                        <Link activeClass="active" to="eventi" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>Eventi</Link>
                     </li>
-                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-blue-50 lg:border-0 cursor-pointer' onClick={handleNav}>
-                        <Link activeClass="active" to="articoli" spy={true} smooth={true} offset={-80} duration={200}>Articoli</Link>
+                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
+                        <Link activeClass="active" to="articoli" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>Articoli</Link>
                     </li>
-                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-blue-50 lg:border-0 cursor-pointer' onClick={handleNav}>
-                        <Link activeClass="active" to="about-us" spy={true} smooth={true} offset={-80} duration={200}>About Us</Link>
+                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
+                        <Link activeClass="active" to="about-us" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>About Us</Link>
                     </li>
-                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-blue-50 lg:border-0 cursor-pointer' onClick={handleNav}>
-                        <Link activeClass="active" to="contatti" spy={true} smooth={true} offset={-80} duration={200}>Contatti</Link>
+                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
+                        <Link activeClass="active" to="contatti" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>Contatti</Link>
                     </li>
                 </ul>
             </nav>
