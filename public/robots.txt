@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://caffeinapolitica.vercel.app/
+# Host: https://caffeinapolitica.vercel.app/
 
 # Sitemaps
-Sitemap: https://caffeinapolitica.vercel.app/sitemap.xml
+# Sitemap: https://caffeinapolitica.vercel.app/sitemap.xml
