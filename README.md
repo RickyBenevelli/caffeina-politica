@@ -53,6 +53,7 @@ x [ ] ottimizzazioni SEO
 - [ ] dark mode (forse non ha senso)
 - [ ] tab search
 - [ ] commentare tutto il codice e documentare
+- [ ] google analytics
 
 
 ### BUGS:

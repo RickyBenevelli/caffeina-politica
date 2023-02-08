@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import { Element } from "react-scroll";
-import Title from "./Title";
-import { FaTelegram, FaTelegramPlane, FaInstagram } from "react-icons/fa";
+
+import { FaTelegramPlane, FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+
+import Title from "./Title";
 
 const Contatti = () => {
   return (
-    <Element name="contatti">
+    <section id="contatti">
       <div className="py-10 flex flex-col items-center">
         <Title title="CONTATTI" background="SOCIAL" />
         <div className="flex flex-col md:flex-row w-3/4 lg:w-1/2 justify-between py-10 text-slate-800">
@@ -31,7 +32,7 @@ const Contatti = () => {
           </Link>
         </div>
       </div>
-    </Element>
+    </section>
   );
 };
 

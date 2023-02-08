@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import dayjs from "dayjs";
+
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { CiTimer } from "react-icons/ci";
-import dayjs from "dayjs";
 
 const PostHeading = ({ frontmatter, readingTime }) => {
   return (

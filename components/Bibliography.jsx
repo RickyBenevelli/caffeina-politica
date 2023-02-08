@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsFillArrowRightSquareFill, BsFillArrowDownSquareFill } from "react-icons/bs";
+
 import { HiArrowSmUp } from "react-icons/hi";
 
 const Bibliography = ({ children }) => {

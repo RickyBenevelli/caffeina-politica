@@ -1,11 +1,10 @@
 import React from "react";
 
 import { MDXRemote } from "next-mdx-remote";
+
 import PostHeading from "./PostHeading";
-import Title from "./Title";
 import Bibliography from "./Bibliography";
 import Signature from "./Signature";
-import Card from "./Card";
 import Suggested from "./Suggested";
 
 const components = {

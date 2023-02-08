@@ -2,7 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import Img1 from '../public/foto1.jpeg'
+
 import dayjs from 'dayjs'
 
 const Card = ({post}) => {

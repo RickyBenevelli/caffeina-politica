@@ -1,6 +1,5 @@
 import React from 'react'
 
-import {TbCalendarStats} from 'react-icons/tb'
 import CalendarData from './CalendarData'
 
 

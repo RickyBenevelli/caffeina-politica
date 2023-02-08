@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import {Link} from 'react-scroll'
+import Link from 'next/link'
 import Image from 'next/image'
+
 import Logo from "../public/logo.png"
 
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
@@ -47,19 +48,19 @@ const NavBar = () => {
                 </div>
                 <ul className={`${nav ? "" : "max-lg:hidden" } flex flex-col items-center max-lg:text-slate-100 lg:flex-row max-lg:w-5/6 text-left`}>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
-                        <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={200} onClick={handleNav}>Home</Link>
+                        <Link href="#home" onClick={handleNav}>Home</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
-                        <Link activeClass="active" to="eventi" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>Eventi</Link>
+                        <Link href="#eventi" onClick={handleNav}>Eventi</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
-                        <Link activeClass="active" to="articoli" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>Articoli</Link>
+                        <Link href="#articoli" onClick={handleNav}>Articoli</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
-                        <Link activeClass="active" to="about-us" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>About Us</Link>
+                        <Link href="#about-us" onClick={handleNav}>About Us</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
-                        <Link activeClass="active" to="contatti" spy={true} smooth={true} offset={-80} duration={200} onClick={handleNav}>Contatti</Link>
+                        <Link href="#contatti" onClick={handleNav}>Contatti</Link>
                     </li>
                 </ul>
             </nav>

@@ -10,7 +10,7 @@ import { Element } from 'react-scroll'
 
 const Hero = () => {
   return (
-    <Element name='home' className={`bg-gradient-to-br from-[#dc6041] via-[#e6a24f] to-[#dc6041]`}>
+    <section id='home' className={`bg-gradient-to-br from-[#dc6041] via-[#e6a24f] to-[#dc6041]`}>
         <div className=' flex flex-col pt-20 lg:pt-[5.5] pb-14 text-slate-900 px-5 lg:px-8'>
             <div className='font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center py-3 md:py-6'>
                 <h1>Lo Spazio di dibattito di Reggio Emilia</h1>
@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
 
         </div>
-    </Element>
+    </section>
   )
 }
 
