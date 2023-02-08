@@ -39,7 +39,7 @@ const NavBar = () => {
             <nav className={`${nav ? "max-lg:bg-slate-700" : ""} flex flex-col lg:flex-row m-auto justify-between items-center p-5 lg:px-5 max-w-[1350px]`}>
                 <div className={`w-full flex lg:w-auto items-center justify-between ${nav ? "max-lg:pb-4" : ""}`}>
                     <Link href='/'>
-                        <Image src={Logo} alt="logo" className='rounded-xl shadow-md shadow-gray-900 w-36 md:w-52 hover:shadow-lg hover:shadow-gray-900'/>
+                        <Image src={Logo} alt="logo di Caffeina Politica" className='rounded-xl shadow-md shadow-gray-900 w-36 md:w-52 hover:shadow-lg hover:shadow-gray-900' priority/>
                     </Link>
                     {
                         nav ? <AiOutlineClose size={20} className="block text-slate-100 lg:hidden" onClick={handleNav}/> 
