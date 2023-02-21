@@ -10,12 +10,10 @@ const Presentazione = ({ reverse, image }) => {
       </div>
 
       <div className={`flex flex-col w-5/6 lg:w-3/5 ${reverse ? "text-right" : "text-left"} p-3`}>
-        <h3 className="text-2xl lg:text-3xl font-semibold">Topolino</h3>
+        <h3 className="text-2xl lg:text-3xl font-semibold">Elia Campanini</h3>
         <p className="text-md lg:text-lg font-normal py-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          debitis quos laudantium id. Laboriosam enim velit quas tenetur
-          possimus! Placeat sint aliquam omnis aspernatur dicta! Explicabo ullam
-          voluptatem a aspernatur.
+        Ho vent&apos;anni, studio scienze politiche, sociali e internazionali a Bologna e voglio sempre comprendere il perchè, di tutto.
+        Il mio interesse alla politica, al sociale, all&apos;argomentare e al dibattere si lega anche a una domanda: &quot;la politica&quot; può ancora cambiare qualcosa? A Caffeina Politica cercherò di darmi una risposta e di comprendere se, nonostante le divisioni sempre più marcate nella società, il confronto è ancora possibile.
         </p>
       </div>
       

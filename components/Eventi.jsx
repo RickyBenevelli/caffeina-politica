@@ -19,8 +19,13 @@ const Eventi = () => {
                 <div className='text-center text-lg py-1'>
                     Ospite: Delrio
                 </div>
-                <div className='text-center text-xl text-slate-900'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, officia, temporibus aut pariatur aliquam veniam velit reiciendis suscipit, blanditiis reprehenderit expedita voluptates commodi eaque corporis dolores amet similique at! Voluptatem.</p>
+                <div className='text-left text-xl text-slate-900 px-5 pt-3'>
+                    <p>L&apos;incontro sarà strutturato come segue:</p>
+                    <ul className='list-disc px-5'>
+                        <li>Introduzione dell&apos;ospite sul tema in questione.</li>
+                        <li>domande dei partecipanti in merito</li>
+                        <li>dibattito</li>
+                    </ul>
                 </div>
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>
                     <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300'>

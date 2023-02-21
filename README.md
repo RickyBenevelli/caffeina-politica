@@ -24,6 +24,8 @@ This is the source code of the website [Caffeina Politica](http://caffeinapoliti
 When a new post is added you have to put the photos in the `public/images/nameOfThePost` folder
 Folder `public/profiles` contains the photos of the authors. These photos have to be squared.
 
+add nextjs-google-analytics to the project
+
 ---
 ### TO DO:
 
@@ -63,6 +65,7 @@ x [ ] ottimizzazioni SEO
 - [ ] quando clicco su una pagina, il titolo della pagina viene coperto
 - [ ] perché il sito non è indicizzato?
 - [ ] se sono su un articolo e clicco su un link del menu non torno alla pagina principale
+- [ ] navbar quando si è su un articolo
 
 ### SUGGERIMENTI BENNI
 - [ ] logo dentro un cerchio, scritta grande con "Caffeina Politica"
