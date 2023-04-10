@@ -26,6 +26,8 @@ Folder `public/profiles` contains the photos of the authors. These photos have t
 
 add nextjs-google-analytics to the project
 
+add SWR
+
 ---
 ### TO DO:
 
@@ -56,6 +58,8 @@ x [ ] ottimizzazioni SEO
 - [ ] tab search
 - [ ] commentare tutto il codice e documentare
 - [ ] google analytics
+
+- [ ] controllare se si può gestire la cache con SWR
 
 
 ### BUGS:

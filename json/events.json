@@ -1,0 +1,26 @@
+[
+    {
+        "title" : "Elezioni e disaffezione: perché gli italiani non votano più sinistra?",
+        "date" : "2023-02-26",
+        "guest" : "Graziano Delrio",
+        "image" : "/images/basket/cover.jpeg",
+        "excerpt" : "L'incontro è volto alla discussione delle cause della disaffezione degli italiani verso la sinistra e le proposte per rilanciare il movimento.",
+        "tags" : []
+    },
+    {
+        "title" : "Mafia",
+        "date" : "2023-03-26",
+        "guest" : "",
+        "image" : "/images/basket/cover.jpeg",
+        "excerpt" : "L'inconto è incentrato sulla mafia e sulle sue conseguenze. Analizzeremo le cause e le soluzioni per contrastare il fenomeno.",
+        "tags" : []
+    },
+    {
+        "title" : "Boh",
+        "date" : "2023-04-30",
+        "guest" : "Romano Prodi",
+        "image" : "/images/basket/cover.jpeg",
+        "excerpt" : "Questo incontro è stato organizzato per parlare di ...",
+        "tags" : []
+    }
+]

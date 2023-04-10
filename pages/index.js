@@ -31,6 +31,7 @@ export default function Home({posts}) {
 }
 
 export async function getStaticProps() {
+
   const posts = postFileNames.map((file) => {
     const content = fs.readFileSync(path.join(postsPath, `${file}`));
     const { data } = matter(content);
@@ -39,7 +40,10 @@ export async function getStaticProps() {
       slug: file.replace(/\.mdx?$/, ''),
     };
   });
+
   return {
-    props: { posts: JSON.parse(JSON.stringify(posts)).sort(sortByDate) },
+    props: { 
+      posts: JSON.parse(JSON.stringify(posts)).sort(sortByDate) 
+    },
   };
 }
