@@ -24,14 +24,27 @@ This is the source code of the website [Caffeina Politica](http://caffeinapoliti
 When a new post is added you have to put the photos in the `public/images/nameOfThePost` folder
 Folder `public/profiles` contains the photos of the authors. These photos have to be squared.
 
-add nextjs-google-analytics to the project
+yarn add nextjs-google-analytics to the project
 
-add SWR
+yarn add SWR
+
+```yarn add dayjs/locale/it```
 
 ---
 ### TO DO:
 
+
+- [ ] ridurre il peso delle immagini
+
 - [ ] calendario
+- [ ] pagina eventi passati e link agli eventi sulle date del calendario
+
+- [ ] controllare se SWR devo metterlo come await
+
+- [ ] ottimizzazioni SEO
+
+
+- [ ] responsive
 - [x] ordinare le date
 - [x] formattare le date
 - [x] componenti react dentro mdx
@@ -39,19 +52,15 @@ add SWR
 - [x] sezione social
 - [x] componente bibliografia
 - [x] navbar
-- [ ] responsive
 - [x] footer
 - [x] configurare pagina 404
 - [ ] bolla nella homepage
 
-- [ ] pagina eventi passati e link agli eventi sulle date del calendario
 
 - [ ] animazioni (:hover)
 - [ ] transizioni
-- [ ] cercare un posto dove hostarlo
-x [ ] ottimizzazioni SEO
-- [x] mandarlo a benni per correzione colori
-- [ ] mandarlo a stefano per avere un parere
+
+
 - [ ] ridurre il peso delle immagini
 - [x] articoli suggeriti in fondo all'articolo
 - [ ] dark mode (forse non ha senso)
