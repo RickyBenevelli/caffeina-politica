@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import { useContext } from 'react'
 
 import { Inter } from '@next/font/google'
 
@@ -9,6 +10,7 @@ const Eventi = dynamic(() => import('../components/Eventi'))
 const Articoli = dynamic(() => import('../components/Articoli'))
 const AboutUs = dynamic(() => import('../components/AboutUs'))
 const Contatti = dynamic(() => import('../components/Contatti'))
+import EventContextProvider, {EventContext} from '../components/EventContext'
 
 import {postsPath, postFileNames, sortByDate} from '../utils'
 import fs from 'fs'
@@ -18,11 +20,13 @@ import matter from 'gray-matter'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({posts}) {
-
+  const {selected, setSelected} = useContext(EventContext)
   return (
     <>
       <Hero/>
-      <Eventi/>
+      <EventContextProvider>
+        <Eventi/>
+      </EventContextProvider>
       <Articoli posts={posts}/>
       <AboutUs/>
       <Contatti />
