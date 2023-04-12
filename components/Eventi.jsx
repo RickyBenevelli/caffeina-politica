@@ -36,12 +36,12 @@ const Eventi = () => {
                     {events && events[selected].title}
                 </div>
 
-                <div className='bg-[#EAEEF1] rounded-xl p-2'>
+                <div className='bg-[#EAEEF1] rounded-xl p-2 px-2 sm:px-5'>
 
-                  <div className={`flex flex-row flex-wrap items-center justify-center py-2 ${events[selected].tags.length>0 ? "" : "hidden"}`}>
+                  <div className={`flex flex-row flex-wrap items-center justify-center pt-2 ${events[selected].tags.length>0 ? "" : "hidden"}`}>
                     {events && events[selected].tags.map((tag, index) => {
                       return (
-                          <div className={`text-center text-sm text-white py-1 px-2 mx-2 ${tag} capitalize inline w-fit rounded-md`} key={index}>
+                          <div className={`text-center text-sm text-white py-1 px-2 mx-2 mb-2 ${tag} capitalize inline w-fit rounded-md`} key={index}>
                             {tag}
                           </div>
                         )

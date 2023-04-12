@@ -4,7 +4,6 @@
         "date" : "2023-02-26",
         "placeAndTime": "Via Fermi 57, ore 19:00",
         "guest" : "Graziano Delrio",
-        "image" : "/images/basket/cover.jpeg",
         "excerpt" : "L'incontro è volto alla discussione delle cause della disaffezione degli italiani verso la sinistra e le proposte per rilanciare il movimento.",
         "tags" : []
     },
@@ -13,7 +12,6 @@
         "date" : "2023-03-26",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "image" : "/images/basket/cover.jpeg",
         "excerpt" : "L'inconto è incentrato sulla mafia e sulle sue conseguenze. Analizzeremo le cause e le soluzioni per contrastare il fenomeno.",
         "tags" : []
     },
@@ -22,7 +20,6 @@
         "date" : "2023-04-30",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "Romano Prodi",
-        "image" : "/images/basket/cover.jpeg",
         "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
         "tags" : ["europa", "estero", "economia", "italia", "politica"]
     },
@@ -31,7 +28,6 @@
         "date" : "2023-05-28",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "image" : "",
         "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
         "tags" : []
     },
@@ -40,7 +36,6 @@
         "date" : "2023-09-24",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "image" : "",
         "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
         "tags" : []
     },
@@ -49,7 +44,6 @@
         "date" : "2023-10-29",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "image" : "",
         "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
         "tags" : []
     },
@@ -58,7 +52,6 @@
         "date" : "2023-11-26",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "image" : "",
         "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
         "tags" : []
     }

@@ -30,7 +30,7 @@ const Hero = () => {
             <div className='flex flex-col items-start text-center md:flex-row md:py-5'>
 
                 {/* colonna di sinistra */}
-                <div className='flex flex-col items-center pb-4 md:w-1/2 md:px-3 lg:text-2xl xl:text-2xl '>
+                <div className='flex flex-col items-center pb-4 md:w-1/2 md:px-3 lg:text-2xl xl:text-2xl m-auto'>
                     
                     <div className='text-center pt-2 pb-7 md:py-3'>
                         <h3 className='font-medium text-xl sm:text-2xl md:text-2xl lg:text-3xl'>
