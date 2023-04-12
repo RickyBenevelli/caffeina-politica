@@ -29,15 +29,29 @@ const Eventi = () => {
                 <div className='text-center font-semibold text-2xl py-2 text-slate-800'>
                     {events && events[selected].title}
                 </div>
-                <div className='flex flex-row flex-wrap items-center justify-center'>
-                  {events && events[selected].tags.map((tag, index) => {
-                    return (
-                        <div className={`text-center text-sm text-white py-1 px-2 mx-2 ${tag} capitalize inline w-fit rounded-md`} key={index}>
-                          {tag}
-                        </div>
-                      )
-                    })}
+
+                <div className='bg-[#EAEEF1] rounded-xl p-2'>
+
+                  <div className={`flex flex-row flex-wrap items-center justify-center py-2 ${events[selected].tags.length>0 ? "" : "hidden"}`}>
+                    {events && events[selected].tags.map((tag, index) => {
+                      return (
+                          <div className={`text-center text-sm text-white py-1 px-2 mx-2 ${tag} capitalize inline w-fit rounded-md`} key={index}>
+                            {tag}
+                          </div>
+                        )
+                      })}
+                  </div>
+
+                  <div className='py-2'>
+                    <div>
+                      <span className='font-medium'>Luogo e orario: </span>{events && events[selected].placeAndTime}
+                    </div>
+                    <div className={`${(events && events[selected].guest!="") ? "" : "hidden"}`}>
+                      <span className='font-medium'>Ospite: </span>{events && events[selected].guest}
+                    </div>
+                  </div>
                 </div>
+
                 <div className='text-slate-900 pt-3 text-left text-sm sm:text-base xl:text-lg'>
                     {events && events[selected].excerpt}
                 </div>
