@@ -1,6 +1,8 @@
 import React, {useState, useContext} from 'react'
 import useSWR from 'swr'
 
+import {TbHandClick} from 'react-icons/tb'
+
 import Calendar from './Calendar'
 import Title from './Title'
 import { EventContext } from './EventContext'
@@ -21,6 +23,10 @@ const Eventi = () => {
         <div className='flex flex-col md:flex-row px-5 items-center lg:items-start max-w-[1350px] m-auto'>
             <div className='flex flex-col py-4 items-center md:w-1/2 md:px-0'>
                 <Calendar events={events}/>
+                <div className='flex flex-row items-center py-2 text-center justify-around'>
+                  <TbHandClick className='w-4 h-4' />
+                  <div className='text-slate-900 px-1 text-sm font-medium'>Select a date</div>
+                </div>
             </div>
 
             {/* colonna di destra */}

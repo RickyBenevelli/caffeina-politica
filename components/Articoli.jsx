@@ -25,7 +25,7 @@ const Articoli = ({ posts }) => {
         </div>
       </div>
 
-      <div className="m-auto py-5 text-center text-[#F5F5F7]">
+      <div className="m-auto py-5 pb-10 text-center text-[#F5F5F7]">
         <h2 className='text-2xl uppercase font-bold'>Contributi</h2>
         <div className="pt-8 pb-4">
           {authors && authors.map((author, index) => (
