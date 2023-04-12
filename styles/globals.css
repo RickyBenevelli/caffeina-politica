@@ -7,3 +7,20 @@ html{
   scroll-behavior: smooth!important;
   font-family: "Inter", sans-serif;
 }
+
+.europa{
+  background-color: #F88C6A;
+}
+.estero{
+  background-color: #F8C26A;
+}
+.economia{
+  background-color: #6A70F8;
+}
+.italia{
+  background-color: #07B04B;
+}
+.politica{
+  background-color: #077EB0;
+}
+/* EAEEF1 */

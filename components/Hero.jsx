@@ -6,12 +6,12 @@ import 'dayjs/locale/it';
 // import {BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from 'next/image'
 
-// bg-gradient-to-br from-[#dac4a9] to-[#dc6041]
-// from-[#dc6041] via-[#eabc84] to-[#dc6041]
-// from-[#dc6041] via-[#e6a24f] to-[#dc6041]
+import dati from '../json/events.json'
 
 const Hero = () => {
-  const { events, isLoading, isError } = useEvents()
+  // const { events, isLoading, isError } = useEvents()
+  const events = JSON.parse(JSON.stringify(dati))
+  const nextEvent = trovaProssimoEvento(events)
 
   return (
     <section id='home' className={`bg-gradient-to-br from-[#dc6041] via-[#e6a24f] to-[#dc6041]`}>
@@ -45,16 +45,19 @@ const Hero = () => {
                           Prossimo Evento
                         </div>
                         <div className='capitalize'>
-                          {events && dayjs(trovaProssimoEvento(events).date).locale('it').format('DD MMMM')}
+                          {/* {events && dayjs(trovaProssimoEvento(events).date).locale('it').format('DD MMMM')} */}
+                          {events && dayjs(nextEvent.date).locale('it').format('DD MMMM')}
                         </div>
                       </div>
 
                       <div className='text-gray-800 py-2 text-2xl sm:text-3xl font-medium'>
-                        {events && trovaProssimoEvento(events).title}
+                        {/* {events && trovaProssimoEvento(events).title} */}
+                        {events && nextEvent.title}
                       </div>
 
                       <div className='text-base py-2 lg:text-lg'>
-                        {events && trovaProssimoEvento(events).excerpt}
+                        {/* {events && trovaProssimoEvento(events).excerpt} */}
+                        {events && nextEvent.excerpt}
                       </div>
                     </div>
 
@@ -76,17 +79,17 @@ const Hero = () => {
 
 export default Hero
 
-const fetcher = url => axios.get(url).then(res => res.data)
+// const fetcher = url => axios.get(url).then(res => res.data)
 
-const useEvents = () => {
-    const { data, error, isLoading } = useSWR('/api/events', fetcher)
+// const useEvents = () => {
+//     const { data, error, isLoading } = useSWR('/api/events', fetcher)
     
-    return {
-        events: data,
-        isLoading,
-        isError: error
-    }
-}
+//     return {
+//         events: data,
+//         isLoading,
+//         isError: error
+//     }
+// }
 
 function trovaProssimoEvento(events){
   const oggi = new Date()

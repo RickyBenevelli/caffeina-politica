@@ -24,7 +24,7 @@
         "guest" : "Romano Prodi",
         "image" : "/images/basket/cover.jpeg",
         "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
-        "tags" : []
+        "tags" : ["europa", "estero", "economia", "italia", "politica"]
     },
     {
         "title" : "Ancora da decidere",
