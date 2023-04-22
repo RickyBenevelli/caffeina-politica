@@ -34,10 +34,10 @@ const Contatti = () => {
             </div>
           </Link>
 
-          <Link href={""}>
+          <Link href={"https://www.tiktok.com/@caffeinapolitica?_t=8bhip3iWvCk"}>
             <div className="flex flex-col items-center my-5 px-3">
               <FaTiktok size={40} />
-              <p className="text-xs py-2">@caffeina_politica</p>
+              <p className="text-xs py-2">@caffeinapolitica</p>
             </div>
           </Link>
 

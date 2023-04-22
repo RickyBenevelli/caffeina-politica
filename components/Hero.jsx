@@ -55,7 +55,7 @@ const Hero = () => {
                         {events && nextEvent.title}
                       </div>
 
-                      <div className='text-base py-2 lg:text-lg'>
+                      <div className='text-base py-2 lg:text-base'>
                         {/* {events && trovaProssimoEvento(events).excerpt} */}
                         {events && nextEvent.excerpt}
                       </div>

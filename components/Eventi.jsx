@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react'
+import Link from 'next/link'
 import useSWR from 'swr'
 
 import {TbHandClick} from 'react-icons/tb'
@@ -59,15 +60,17 @@ const Eventi = () => {
                 </div>
 
                 <div className='text-slate-900 pt-3 text-left text-sm sm:text-base xl:text-lg'>
-                    {events && events[selected].excerpt}
+                    {events && events[selected].description}
                 </div>
 
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>
                     
                     {events && selected == nextIndex && 
-                    <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300'>
-                        Prenotati
-                    </button>
+                    <Link href={"https://www.eventbrite.com/e/biglietti-europa-ed-euro-intervento-e-dibattito-con-romano-prodi-622931704497"}>
+                      <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300'>
+                          Prenotati
+                      </button>
+                    </Link>
                       }
                 </div>
             </div>
