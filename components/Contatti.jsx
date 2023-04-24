@@ -27,7 +27,7 @@ const Contatti = () => {
             </div>
           </Link>
 
-          <Link href={"caffeina.politica@gmail.com"}>
+          <Link href={"mailto:caffeina.politica@gmail.com"}>
             <div className="flex flex-col items-center my-5 px-3">
               <FiMail size={40} />
               <p className="text-xs py-2">caffeina.politica@gmail.com</p>

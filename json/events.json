@@ -2,20 +2,22 @@
     {
         "title" : "Elezioni e disaffezione: perché gli italiani non votano più sinistra?",
         "date" : "2023-02-26",
-        "placeAndTime": "Via Fermi 57, ore 19:00",
+        "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "Graziano Delrio",
         "excerpt" : "L'incontro è volto alla discussione delle cause della disaffezione degli italiani verso la sinistra e le proposte per rilanciare il movimento.",
         "description" : "",
-        "tags" : []
+        "url": "",
+        "tags" : ["Elezioni", "Italia", "Giovani"]
     },
     {
-        "title" : "Mafia",
+        "title" : "Lavoro e giovani: Davvero non resta che emigrare?",
         "date" : "2023-03-26",
-        "placeAndTime": "Via Fermi 57, RE, ore 19:00",
+        "placeAndTime": "Via Fermi 57, RE, ore 16:00",
         "guest" : "",
         "excerpt" : "L'inconto è incentrato sulla mafia e sulle sue conseguenze. Analizzeremo le cause e le soluzioni per contrastare il fenomeno.",
         "description" : "",
-        "tags" : []
+        "url": "",
+        "tags" : ["Lavoro", "Europa", "Giovani", "Salario Minimo", "Estero"]
     },
     {
         "title" : "Europa ed euro",
@@ -24,33 +26,37 @@
         "guest" : "Romano Prodi",
         "excerpt" : "Ti interessa la politica, l'attualità o vuoi comprendere di più sul presente, sull'euro e sull'Unione Europea? Confrontandoti con altri interessati o persone che come te vogliono capire di più, esporre la loro idea o ascoltare?\nCon un protagonista d'eccezione come l'ex presidente della Commissione Europea Romano Prodi, domande e interventi dei partecipanti e un dibattito stimolante il tutto si preannuncia piuttosto interessante!\n\r\n30 Aprile, Reggio Emilia, non mancare!",
         "description" : "Un'occasione da non perdere per tutti gli appassionati di politica, coloro che vogliono comprendere meglio il presente o si domandando quale futuro aspetta l'Italia e l'Europa. \nE chi meglio dell'ex presidente della Commissione Europea Romano Prodi, nonché uno dei principali fautori della moneta unica europea per affrontare questo complicato tema? \nAl suo intervento seguiranno domande e interventi dei partecipanti, in un dibattito che si preannuncia coinvolgente riguardo all'euro e alla politica europea. La situazione politica ed economica attuale è in continua evoluzione e per prepararci al futuro dobbiamo comprendere approfonditamente il presente. Partecipa a questo evento con altri appassionati di politica o se semplicemente vuoi conoscere meglio la situazione o informarti e unisciti alla discussione sul futuro dell'Europa e dell'Italia a Caffeina Politica, il 30 Aprile a Reggio Emilia!",
-        "tags" : ["europa", "estero", "economia", "italia", "politica"]
+        "url": "https://www.eventbrite.com/e/biglietti-europa-ed-euro-intervento-e-dibattito-con-romano-prodi-622931704497",
+        "tags" : ["Europa", "Cina", "Stati Uniti", "Euro", "Storia"]
     },
     {
-        "title" : "Ancora da decidere",
+        "title" : "Nucleare e rinnovabili, che futuro ci aspetta?",
         "date" : "2023-05-28",
-        "placeAndTime": "Via Fermi 57, RE, ore 19:00",
+        "placeAndTime": "Via Cassoli 1, RE, ore 17:00",
         "guest" : "",
-        "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
-        "description" : "",
-        "tags" : []
+        "excerpt" : "In un debate in stile presidenziale statunitense verranno poste diverse domande inerenti al nucleare, alle rinnovabili, all'ambiente e al pareggio energetico a personalità o enti che supportano una soluzione piuttosto che l'altra. Non verrà trascurato nemmeno l'aspetto economico di entrambe le opzioni. Il tutto sarà seguito da un dibattito tra i partecipanti.",
+        "description" : "In un debate in stile presidenziale statunitense verranno poste diverse domande inerenti al nucleare, alle rinnovabili, all'ambiente e al pareggio energetico a personalità o enti che supportano una soluzione piuttosto che l'altra. Non verrà trascurato nemmeno l'aspetto economico di entrambe le opzioni. Il tutto sarà seguito da un dibattito tra i partecipanti. ",
+        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
+        "tags" : ["Ambiente", "Nucleare", "Pareggio Energetico", "Rinnovabili", "Economia"]
     },
     {
-        "title" : "Ancora da decidere",
+        "title" : "I problemi dell'istruzione in Italia",
         "date" : "2023-09-24",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
+        "excerpt" : "",
         "description" : "",
-        "tags" : []
+        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
+        "tags" : ["Istruzione", "Riforma Gentile", "Estero", "Ansia", "Modello Scolastico"]
     },
     {
         "title" : "Ancora da decidere",
         "date" : "2023-10-29",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
-        "description" : "",
+        "excerpt" : "L'argomento verrà deciso prossimamente",
+        "description" : "L'argomento verrà deciso prossimamente",
+        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
         "tags" : []
     },
     {
@@ -58,8 +64,9 @@
         "date" : "2023-11-26",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "excerpt" : "Lorem ipsum dolor sit amet. Id numquam recusandae qui maxime omnis aut dolores tempora non voluptatem quia qui enim inventore sed ducimus quia vel totam illo.",
-        "description" : "",
+        "excerpt" : "L'argomento verrà deciso prossimamente",
+        "description" : "L'argomento verrà deciso prossimamente",
+        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
         "tags" : []
     }
 ]

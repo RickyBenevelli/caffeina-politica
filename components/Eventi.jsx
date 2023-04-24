@@ -9,13 +9,13 @@ import Title from './Title'
 import { EventContext } from './EventContext'
 
 import dati from '../json/events.json'
+import tagsjson from '../json/tags.json'
 
 const Eventi = () => {
-  // const { events, isLoading, isError, nextIndex } = useEvents()
   const {selected, setSelected} = useContext(EventContext)
 
   const events = JSON.parse(JSON.stringify(dati))
-  const nextIndex = indiceProssimoEvento(events)
+  const nextsEvents = indiceProssimoEvento(events)
 
   return (
     <section id='eventi' className='bg-slate-50 py-20 lg:py-28'>
@@ -42,7 +42,7 @@ const Eventi = () => {
                   <div className={`flex flex-row flex-wrap items-center justify-center pt-2 ${events[selected].tags.length>0 ? "" : "hidden"}`}>
                     {events && events[selected].tags.map((tag, index) => {
                       return (
-                          <div className={`text-center text-sm text-white py-1 px-2 mx-2 mb-2 ${tag} capitalize inline w-fit rounded-md`} key={index}>
+                          <div className={`text-center text-sm text-white py-1 px-2 mx-2 mb-2 capitalize inline w-fit rounded-md`} key={index} style={{backgroundColor : `${tagsjson?.find((value) => value.tag == tag).color}`}}>
                             {tag}
                           </div>
                         )
@@ -65,8 +65,8 @@ const Eventi = () => {
 
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>
                     
-                    {events && selected == nextIndex && 
-                    <Link href={"https://www.eventbrite.com/e/biglietti-europa-ed-euro-intervento-e-dibattito-con-romano-prodi-622931704497"}>
+                    {events && nextsEvents.includes(selected) && 
+                    <Link href={events[selected]?.url}>
                       <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300'>
                           Prenotati
                       </button>
@@ -81,44 +81,13 @@ const Eventi = () => {
 
 export default Eventi
 
-// const fetcher = url => axios.get(url).then(res => res.data)
-
-// const useEvents = () => {
-//     const { data, error, isLoading } = useSWR('/api/events', fetcher)
-//     let nextIndex = 0
-//     const oggi = new Date()
-
-//     if(data){
-//       data.sort((a, b) => {
-//           return new Date(a.date) - new Date(b.date);
-//       })
-//       for (let i = 0; i < data.length; i++) {
-//         if (new Date(data[i].date) >= oggi) {
-//           nextIndex = i
-//           break
-//         }
-//       }
-//     }
-//     return {
-//         events: data,
-//         isLoading,
-//         isError: error,
-//         nextIndex
-//     }
-// }
 function indiceProssimoEvento(events){
   const oggi = new Date()
-  let prossimoEvento = null
-
-  events.sort((a, b) => {
-    return new Date(a.date) - new Date(b.date);
-  })
-  for (let i = 0; i < events.length; i++) {
-    if (new Date(events[i].date) >= oggi) {
-      prossimoEvento = i
-      break
+  const prossimiEventi = events.map((evento, index) => {
+    const dataEvento = new Date(evento.date)
+    if(dataEvento >= oggi){
+      return index
     }
-  }
-
-  return prossimoEvento
+  })
+  return prossimiEventi
 }

@@ -10,6 +10,7 @@ const Eventi = dynamic(() => import('../components/Eventi'))
 const Articoli = dynamic(() => import('../components/Articoli'))
 const AboutUs = dynamic(() => import('../components/AboutUs'))
 const Contatti = dynamic(() => import('../components/Contatti'))
+const Project = dynamic(() => import('../components/Project'))
 import EventContextProvider, {EventContext} from '../components/EventContext'
 
 import {postsPath, postFileNames, sortByDate} from '../utils'
@@ -28,6 +29,7 @@ export default function Home({posts}) {
         <Eventi/>
       </EventContextProvider>
       <Articoli posts={posts}/>
+      <Project />
       <AboutUs/>
       <Contatti />
     </>

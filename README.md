@@ -30,6 +30,8 @@ yarn add SWR
 
 ```yarn add dayjs/locale/it```
 
+
+Quando vengono aggiunti i tag, bisogna anche aggiungere una classe css che si chiami come il tag e che abbia come background-color il colore del tag
 ---
 ### TO DO:
 
@@ -42,6 +44,8 @@ yarn add SWR
 - [ ] controllare se SWR devo metterlo come await
 
 - [ ] ottimizzazioni SEO
+
+- [ ] aggiungere una flag `evento pronto` per decidere quando mostrare i dati di un evento futuro
 
 
 - [ ] responsive

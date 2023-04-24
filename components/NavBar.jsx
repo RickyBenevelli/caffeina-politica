@@ -57,6 +57,9 @@ const NavBar = () => {
                         <Link href="/#articoli" onClick={handleNav}>Articoli</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
+                        <Link href="/#progetto" onClick={handleNav}>Progetto</Link>
+                    </li>
+                    <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>
                         <Link href="/#about-us" onClick={handleNav}>About Us</Link>
                     </li>
                     <li className='p-4 lg:px-10 hover:text-slate-600 border-b border-slate-300/80 lg:border-0 cursor-pointer max-lg:w-full' onClick={handleNav}>

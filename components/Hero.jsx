@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section id='home' className={`bg-gradient-to-br from-[#dc6041] via-[#e6a24f] to-[#dc6041]`}>
         {/* Contenitore generale */}
-        <div className=' flex flex-col pt-20 lg:pt-[5.5] pb-14 text-slate-900 px-5 max-w-[1350px]'>
+        <div className=' flex flex-col pt-20 lg:pt-[5.5] pb-14 text-slate-900 px-5 max-w-[1350px] m-auto'>
 
             <div className='font-black text-4xl text-center py-3 sm:text-5xl md:text-6xl md:pt-8 lg:text-5xl xl:text-6xl '>
                 <h1>Caffeina Politica</h1>

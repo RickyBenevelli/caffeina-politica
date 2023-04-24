@@ -1,0 +1,82 @@
+[
+    {
+        "tag": "Ambiente",
+        "color": "#7CDEA3"
+    },
+    {
+        "tag": "Ansia",
+        "color": "#F88C6A"
+    },
+    {
+        "tag": "Cina",
+        "color": "#9D1818"
+    },
+    {
+        "tag": "Economia",
+        "color": "#6A70F8"
+    },
+    {
+        "tag": "Elezioni",
+        "color": "#839788"
+    },
+    {
+        "tag": "Estero",
+        "color": "#077EB0"
+    },
+    {
+        "tag": "Euro",
+        "color": "#224870"
+    },
+    {
+        "tag": "Europa",
+        "color": "#003399"
+    },
+    {
+        "tag": "Giovani",
+        "color": "#F8C26A"
+    },
+    {
+        "tag": "Istruzione",
+        "color": "#6C9BCF"
+    },
+    {
+        "tag": "Italia",
+        "color": "#009169"
+    },
+    {
+        "tag": "Lavoro",
+        "color": "#AE8CA3"
+    },
+    {
+        "tag": "Modello Scolastico",
+        "color": "#B56576"
+    },
+    {
+        "tag": "Nucleare",
+        "color": "#F97B22"
+    },
+    {
+        "tag": "Pareggio Energetico",
+        "color": "#FFAA4A"
+    },
+    {
+        "tag": "Riforma Gentile",
+        "color": "#6E8894"
+    },
+    {
+        "tag": "Rinnovabili",
+        "color": "#52AA8A"
+    },
+    {
+        "tag": "Salario Minimo",
+        "color": "#654E92"
+    },
+    {
+        "tag": "Stati Uniti",
+        "color": "#CB3234"
+    },
+    {
+        "tag": "Storia",
+        "color": "#344254"
+    }
+]
