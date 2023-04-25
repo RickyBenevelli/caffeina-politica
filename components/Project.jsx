@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-import prima from '../public/hero.webp'
-import seconda from '../public/hero.webp'
-import terza from '../public/hero.webp'
-// bg-[#169873c3]   verde
-// bg-[#ff8527dc]   arancione
+import prima from '../public/progetto/foto1.webp'
+import seconda from '../public/progetto/foto2.webp'
+import terza from '../public/progetto/foto3.webp'
+
 const Project = () => {
     return (
         <section id='progetto' className='bg-[#AC815C] py-20 lg:py-28'>
@@ -22,8 +21,8 @@ const Project = () => {
 
                 <div className='w-full grid grid-cols-1 sm:grid-cols-3 gap-10 py-5 md:py-10'>
                     <Image src={prima} alt='Caffeina Politica' className='rounded-md'/>
-                    <Image src={prima} alt='Caffeina Politica' className='rounded-md'/>
-                    <Image src={prima} alt='Caffeina Politica' className='rounded-md'/>
+                    <Image src={seconda} alt='Caffeina Politica' className='rounded-md'/>
+                    <Image src={terza} alt='Caffeina Politica' className='rounded-md'/>
                 </div>
 
                 <p className='text-white text-sm sm:text-base xl:text-lg '>

@@ -22,22 +22,22 @@ export default AboutUs
 const dataFounder = [
   {
     name: "Elia Campanini",
-    image: "/profiles/profilo1.jpeg",
+    image: "/profiles/elli.webp",
     description: `Ho vent'anni, studio scienze politiche, sociali e internazionali a Bologna e voglio sempre comprendere il perchè, di tutto. Il mio interesse alla politica, al sociale, all'argomentare e al dibattere si lega anche a una domanda: "la politica" può ancora cambiare qualcosa? A Caffeina Politica cercherò di darmi una risposta e di comprendere se, nonostante le divisioni sempre più marcate nella società, il confronto è ancora possibile.`
   },
   {
     name: "Gabriele Consolini",
-    image: "/profiles/profilo2.jpeg",
+    image: "/profiles/cons.webp",
     description: ""
   },
   {
     name: "Gaia Foschi",
-    image: "/profiles/profilo4.jpeg",
+    image: "/profiles/gaia.webp",
     description: ""
   },
   {
     name: "Riccardo Benevelli",
-    image: "/profiles/profilo5.jpeg",
+    image: "/profiles/ricky.webp",
     description: `Studio informatica a Trento e faccio scout nel gruppo di RE2. Ritengo l'interessamento politico e civile un valore e un dovere per essere cittadini attivi all'interno della nostra società. Tramite Caffeina Politica desidero portare avanti un dibattito e un confronto costruttivo, che possano arricchirmi e farmi vedere le cose da nuovi punti di vista`
   },
 ]
