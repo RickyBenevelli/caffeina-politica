@@ -31,7 +31,10 @@ yarn add SWR
 ```yarn add dayjs/locale/it```
 
 
-Quando vengono aggiunti i tag, bisogna anche aggiungere una classe css che si chiami come il tag e che abbia come background-color il colore del tag
+Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il colore desiderato. 
+
+`yarn add @vercel/analytics``
+
 ---
 ### TO DO:
 
