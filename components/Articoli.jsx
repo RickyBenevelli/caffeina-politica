@@ -34,7 +34,7 @@ const Articoli = ({ posts }) => {
               </div>
             ))}
         </div>
-        <div className="text-sm py-2">
+        <div className="text-sm py-2 px-4">
           Se vuoi collaborare alla scrittura degli articoli contattaci in privato
         </div>
       </div>

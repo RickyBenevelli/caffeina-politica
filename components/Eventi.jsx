@@ -66,7 +66,7 @@ const Eventi = () => {
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>
                     
                     {events && nextsEvents.includes(selected) && 
-                    <Link href={events[selected]?.url}>
+                    <Link href={events[selected]?.url} target="_blank">
                       <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300'>
                           Prenotati
                       </button>

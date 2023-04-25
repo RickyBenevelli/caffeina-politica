@@ -8,7 +8,7 @@ const Footer = () => {
         &copy; 2023 Caffeina Politica. All rights reserved.
       </div>
       <div className='text-xs'>
-        developed by <a href='https://www.riccardobenevelli.com/' className='font-medium'>Riccardo Benevelli</a>
+        developed by <a href='https://www.riccardobenevelli.com/' className='font-medium' target="_blank" rel="noreferrer">Riccardo Benevelli</a>
       </div>
     </section>
   )

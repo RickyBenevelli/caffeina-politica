@@ -21,7 +21,7 @@ import matter from 'gray-matter'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({posts}) {
-  const {selected, setSelected} = useContext(EventContext) // NOTE: rimuovere se non serve
+
   return (
     <>
       <Hero/>
