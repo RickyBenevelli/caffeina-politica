@@ -4,9 +4,9 @@ import Card from "./Card";
 import Title from "./Title";
 
 const Suggested = ({suggested}) => {
-    // console.log(suggested)
+
   return (
-    <div>
+    <div className={`${suggested?.length != 0 ? "" : "hidden"}`}>
       <Title title="ARTICOLI" background="CORRELATI"/>
       <div className="flex overflow-x-scroll pb-10 scrollbar-hide snap-x">
         <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 snap-x">
