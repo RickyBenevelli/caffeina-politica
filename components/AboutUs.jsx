@@ -28,7 +28,7 @@ const dataFounder = [
   {
     name: "Gabriele Consolini",
     image: "/profiles/cons.webp",
-    description: ""
+    description: "Mi chiamo Gabriele, e ho 23 anni. Sono convinto che sia fondamentale, nella vita di tutti i giorni, e quindi anche per approcciarsi a temi di politica e attualità, partire da un dibattito informato, basato sui dati reali. Per questo credo in Caffeina Politica, per approcciarsi a qualsiasi tema in maniera non ideologica, ma razionale."
   },
   {
     name: "Gaia Foschi",
