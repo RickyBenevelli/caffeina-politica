@@ -33,7 +33,7 @@ const dataFounder = [
   {
     name: "Gaia Foschi",
     image: "/profiles/gaia.webp",
-    description: "Mi chiamo Gaia, ho 20 anni e studio Sviluppo e Cooperazione Internazionale a Bologna. Mi sono interessata inizialmente ai temi sociali, come i diritti umani, per poi arrivare alla politica, essendo strettamente collegati. Caffeina politica affronta temi molto importanti, che credo sia importante discutere, anche per comprendere punti di vista molto diversi, attraverso anche dati."
+    description: "Mi chiamo Gaia, ho 20 anni e studio Sviluppo e Cooperazione Internazionale a Bologna. Mi sono interessata inizialmente ai temi sociali, come i diritti umani, per poi arrivare alla politica, essendo strettamente collegati. A Caffeina politica affrontiamo temi molto importanti, per comprendere punti di vista molto diversi, anche attraverso dati e grafici."
   },
   {
     name: "Riccardo Benevelli",

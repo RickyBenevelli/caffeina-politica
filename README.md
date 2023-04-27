@@ -39,6 +39,7 @@ Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il co
 ### TO DO:
 - [ ] aggiungere una flag `evento pronto` per decidere quando mostrare i dati di un evento futuro
 - [ ] bolla nella homepage
+- [ ] aggiungere l'override dei link negli articoli
 
 - [ ] animazioni (:hover)
 - [ ] transizioni
@@ -48,7 +49,6 @@ Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il co
 - [ ] commentare tutto il codice e documentare
 
 ### BUGS:
-- [ ] perché il sito non è indicizzato?
 
 ### SUGGERIMENTI BENNI
 - [ ] logo dentro un cerchio, scritta grande con "Caffeina Politica"
