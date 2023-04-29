@@ -45,7 +45,7 @@ export async function getStaticProps() {
       frontmatter: data,
       slug: file.replace(/\.mdx?$/, ''),
     };
-  });
+  }).filter((post) => (new Date(post.frontmatter.date) <= new Date() ));
 
   return {
     props: { 
