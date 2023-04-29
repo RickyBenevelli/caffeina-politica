@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react'
+import Link from 'next/link'
 import axios from 'axios'
 import useSWR from 'swr'
 import dayjs from 'dayjs'
@@ -12,6 +13,10 @@ const Hero = () => {
   // const { events, isLoading, isError } = useEvents()
   const events = JSON.parse(JSON.stringify(dati))
   const nextEvent = trovaProssimoEvento(events)
+
+  const createMarkup = () => {
+    return { __html: nextEvent.excerpt };
+  };
 
   return (
     <section id='home' className={`bg-gradient-to-br from-[#dc6041] via-[#e6a24f] to-[#dc6041]`}>
@@ -55,9 +60,13 @@ const Hero = () => {
                         {events && nextEvent.title}
                       </div>
 
-                      <div className='text-base py-2 lg:text-base'>
-                        {/* {events && trovaProssimoEvento(events).excerpt} */}
-                        {events && nextEvent.excerpt}
+                      <div className='text-base py-2 lg:text-base' >
+                        <div dangerouslySetInnerHTML={createMarkup()}/>
+                        <Link href={"/question"} >
+                          <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300 mt-5 text-white'>
+                              Fai una domanda
+                          </button>
+                        </Link>
                       </div>
                     </div>
 
@@ -78,18 +87,6 @@ const Hero = () => {
 }
 
 export default Hero
-
-// const fetcher = url => axios.get(url).then(res => res.data)
-
-// const useEvents = () => {
-//     const { data, error, isLoading } = useSWR('/api/events', fetcher)
-    
-//     return {
-//         events: data,
-//         isLoading,
-//         isError: error
-//     }
-// }
 
 function trovaProssimoEvento(events){
   const oggi = new Date()

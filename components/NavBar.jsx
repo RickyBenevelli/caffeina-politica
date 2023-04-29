@@ -15,6 +15,10 @@ const NavBar = () => {
     const handleNav = () => {
         setNav(!nav)
     }
+
+    const closeNav = () => {
+        setNav(false)
+    }
     
     useEffect(() => {
         const changeColor = () =>{
@@ -38,7 +42,7 @@ const NavBar = () => {
         <div className={`${ color }  fixed left-0 top-0 w-full transition-all duration-200 ease-in z-50`}>
             <nav className={`${nav ? "max-lg:bg-slate-700" : ""} flex flex-col lg:flex-row m-auto justify-between items-center p-5 lg:px-5 max-w-[1350px]`}>
                 <div className={`w-full flex lg:w-auto items-center justify-between ${nav ? "max-lg:pb-4" : ""}`}>
-                    <Link href='/'>
+                    <Link href='/' onClick={closeNav}>
                         <Image src={Logo} alt="logo di Caffeina Politica" className='rounded-xl shadow-md shadow-gray-900 w-36 md:w-52 hover:shadow-lg hover:shadow-gray-900' priority/>
                     </Link>
                     {

@@ -17,6 +17,10 @@ const Eventi = () => {
   const events = JSON.parse(JSON.stringify(dati))
   const nextsEvents = indiceProssimoEvento(events)
 
+  const createMarkup = () => {
+    return { __html: events[selected].description };
+  };
+
   return (
     <section id='eventi' className='bg-slate-50 py-20 lg:py-28'>
         <Title background="EVENTI" title="CALENDARIO"/>
@@ -59,8 +63,7 @@ const Eventi = () => {
                   </div>
                 </div>
 
-                <div className='text-slate-900 pt-3 text-left text-sm sm:text-base xl:text-lg'>
-                    {events && events[selected].description}
+                <div className='text-slate-900 pt-3 text-left text-sm sm:text-base xl:text-lg' dangerouslySetInnerHTML={createMarkup()}>
                 </div>
 
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>
