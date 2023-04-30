@@ -90,6 +90,7 @@ export default Hero
 
 function trovaProssimoEvento(events){
   const oggi = new Date()
+  oggi.setDate(oggi.getDate() - 1);
   let prossimoEvento = null
 
   events.sort((a, b) => {
