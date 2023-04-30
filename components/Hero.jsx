@@ -89,15 +89,15 @@ const Hero = () => {
 export default Hero
 
 function trovaProssimoEvento(events){
-  const oggi = new Date()
-  oggi.setDate(oggi.getDate() - 1);
+  const ieri = new Date()
+  ieri.setDate(ieri.getDate() - 1);
   let prossimoEvento = null
 
   events.sort((a, b) => {
     return new Date(a.date) - new Date(b.date);
   })
   for (let i = 0; i < events.length; i++) {
-    if (new Date(events[i].date) >= oggi) {
+    if (new Date(events[i].date) >= ieri) {
       prossimoEvento = events[i]
       break
     }

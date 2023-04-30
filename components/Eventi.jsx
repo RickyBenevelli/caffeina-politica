@@ -15,7 +15,7 @@ const Eventi = () => {
   const {selected, setSelected} = useContext(EventContext)
 
   const events = JSON.parse(JSON.stringify(dati))
-  const nextsEvents = indiceProssimoEvento(events)
+  const nextsEvents = prossimiEventi(events)
 
   const createMarkup = () => {
     return { __html: events[selected].description };
@@ -68,7 +68,7 @@ const Eventi = () => {
 
                 <div className='text-center pt-10 text-lg font-medium text-slate-50/90'>
                     
-                    {events && nextsEvents.includes(selected) && 
+                    {events && nextsEvents.includes(selected) && (events[selected]?.url) && 
                     <Link href={events[selected]?.url} target="_blank">
                       <button className='bg-orange-500 shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/90 rounded-lg py-2 px-5 ease-in duration-300'>
                           Prenotati
@@ -84,11 +84,12 @@ const Eventi = () => {
 
 export default Eventi
 
-function indiceProssimoEvento(events){
-  const oggi = new Date()
+function prossimiEventi(events){
+  const ieri = new Date()
+  ieri.setDate(ieri.getDate() - 1);
   const prossimiEventi = events.map((evento, index) => {
     const dataEvento = new Date(evento.date)
-    if(dataEvento >= oggi){
+    if(dataEvento >= ieri){
       return index
     }
   })

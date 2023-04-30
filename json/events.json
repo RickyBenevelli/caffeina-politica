@@ -4,8 +4,8 @@
         "date" : "2023-02-26",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "Graziano Delrio",
-        "excerpt" : "Dopo aver analizzato la vittoria della Destra e se il nuovo governo sia o meno un ritorno al fascismo ora, assieme al senatore del Partito Democratico Graziano Delrio, cerchiamo di analizzare perché sempre più italiani decidono di non votare e, al contempo, sempre in meno, soprattutto tra i giovani, decidono di votare un partito di sinistra",
-        "description" : "Dopo aver analizzato la vittoria della Destra e se il nuovo governo sia o meno un ritorno al fascismo ora, assieme al senatore del Partito Democratico Graziano Delrio, cerchiamo di analizzare perché sempre più italiani decidono di non votare e, al contempo, sempre in meno, soprattutto tra i giovani, decidono di votare un partito di sinistra",
+        "excerpt" : "<p>Dopo aver analizzato la <b>vittoria della Destra</b> e se il nuovo governo sia o meno un ritorno al <b>fascismo</b> ora, assieme al <b>senatore del Partito Democratico Graziano Delrio</b>, cerchiamo di analizzare perché sempre più italiani decidono di <b>non votare</b> e, al contempo, sempre in meno, soprattutto tra i giovani, decidono di votare un partito di sinistra</p>",
+        "description" : "<p>Dopo aver analizzato la <b>vittoria della Destra</b> e se il nuovo governo sia o meno un ritorno al <b>fascismo</b> ora, assieme al <b>senatore del Partito Democratico Graziano Delrio</b>, cerchiamo di analizzare perché sempre più italiani decidono di <b>non votare</b> e, al contempo, sempre in meno, soprattutto tra i giovani, decidono di votare un partito di sinistra</p>",
         "url": "",
         "tags" : ["Elezioni", "Italia", "Giovani"]
     },
@@ -14,9 +14,9 @@
         "date" : "2023-03-26",
         "placeAndTime": "Via Fermi 57, RE, ore 16:00",
         "guest" : "",
-        "excerpt" : "L'inconto è incentrato sulla mafia e sulle sue conseguenze. Analizzeremo le cause e le soluzioni per contrastare il fenomeno.",
-        "description" : "Disuguaglianza salariale, cervelli in fuga, emigrazione verso l'estero per stipendi migliori, differenze tra nord e sud, microimprese e salario minimo: questi alcuni dei temi e delle questioni dalle quali partire e da sviscerare per cercare una risposta ai problemi presenti in Italia riguardanti il lavoro",
-        "url": "Disuguaglianza salariale, cervelli in fuga, emigrazione verso l'estero per stipendi migliori, differenze tra nord e sud, microimprese e salario minimo: questi alcuni dei temi e delle questioni dalle quali partire e da sviscerare per cercare una risposta ai problemi presenti in Italia riguardanti il lavoro",
+        "excerpt" : "<p><b>Disuguaglianza salariale</b>, <b>cervelli in fuga</b>, <b>emigrazione</b> verso l'estero per stipendi migliori, differenze tra nord e sud, microimprese e <b>salario minimo</b>: questi alcuni dei temi e delle questioni dalle quali partire e da sviscerare per cercare una risposta ai problemi presenti in Italia riguardanti il <b>lavoro</b></p>",
+        "description" : "<p><b>Disuguaglianza salariale</b>, <b>cervelli in fuga</b>, <b>emigrazione</b> verso l'estero per stipendi migliori, differenze tra nord e sud, microimprese e <b>salario minimo</b>: questi alcuni dei temi e delle questioni dalle quali partire e da sviscerare per cercare una risposta ai problemi presenti in Italia riguardanti il <b>lavoro</b></p>",
+        "url": "",
         "tags" : ["Lavoro", "Europa", "Giovani", "Salario Minimo", "Estero"]
     },
     {
@@ -36,7 +36,7 @@
         "guest" : "",
         "excerpt" : "<p>In un <b>debate in stile presidenziale statunitense</b> verranno poste diverse domande inerenti al <b>nucleare</b>, alle <b>rinnovabili</b>, all'<b>ambiente</b> e al <b>pareggio energetico</b> a personalità o enti che supportano una soluzione piuttosto che l'altra. Non verrà trascurato nemmeno <b>l'aspetto economico</b> di entrambe le opzioni. Il tutto sarà seguito da un dibattito tra i partecipanti.</p>",
         "description" : "<p>In un <b>debate in stile presidenziale statunitense</b> verranno poste diverse domande inerenti al <b>nucleare</b>, alle <b>rinnovabili</b>, all'<b>ambiente</b> e al <b>pareggio energetico</b> a personalità o enti che supportano una soluzione piuttosto che l'altra. Non verrà trascurato nemmeno <b>l'aspetto economico</b> di entrambe le opzioni. Il tutto sarà seguito da un dibattito tra i partecipanti.</p>",
-        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
+        "url": "",
         "tags" : ["Ambiente", "Nucleare", "Pareggio Energetico", "Rinnovabili", "Economia"]
     },
     {
@@ -46,7 +46,7 @@
         "guest" : "",
         "excerpt" : "",
         "description" : "",
-        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
+        "url": "",
         "tags" : ["Istruzione", "Riforma Gentile", "Estero", "Ansia", "Modello Scolastico"]
     },
     {
@@ -54,9 +54,9 @@
         "date" : "2023-10-29",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "excerpt" : "L'argomento verrà deciso prossimamente",
-        "description" : "L'argomento verrà deciso prossimamente",
-        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
+        "excerpt" : "<i>L'argomento verrà deciso prossimamente</i>",
+        "description" : "<i>L'argomento verrà deciso prossimamente</i>",
+        "url": "",
         "tags" : []
     },
     {
@@ -64,9 +64,9 @@
         "date" : "2023-11-26",
         "placeAndTime": "Via Fermi 57, RE, ore 19:00",
         "guest" : "",
-        "excerpt" : "L'argomento verrà deciso prossimamente",
-        "description" : "L'argomento verrà deciso prossimamente",
-        "url": "https://www.eventbrite.com/o/caffeina-politica-64813580273",
+        "excerpt" : "<i>L'argomento verrà deciso prossimamente</i>",
+        "description" : "<i>L'argomento verrà deciso prossimamente</i>",
+        "url": "",
         "tags" : []
     }
 ]

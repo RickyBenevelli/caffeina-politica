@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import {GrSend} from 'react-icons/gr'
+import {BiErrorCircle} from 'react-icons/bi'
 
 import { useForm } from "react-hook-form";
 import dayjs from 'dayjs'
@@ -10,16 +11,43 @@ import dati from '../json/events.json'
 const Question = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isError, setIsError] = useState(false)
-  // const [showBanner, setShowBanner] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
   const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
+  const bannerRef = useRef(null);
 
   const events = JSON.parse(JSON.stringify(dati))
   const nextEvent = trovaProssimoEvento(events)
   
+  // if (bannerRef.current) {
+  //   clearTimeout(bannerRef.current);
+  // }
+  // bannerRef.current = setTimeout(() => {
+  //   setShowBanner(false);
+  // }, 200);
+
+  useEffect(() => {
+    if (isSubmitted) {
+      setShowBanner(true);
+      setTimeout(() => {
+        setShowBanner(false);
+      }, 2000);
+    } else if (isError) {
+      setShowBanner(true);
+      setTimeout(() => {
+        setShowBanner(false);
+      }, 2000);
+    } else if (errors.message) {
+      setShowBanner(true);
+      setTimeout(() => {
+        setShowBanner(false);
+      }, 2000);
+    }
+  }, [isSubmitted, isError, errors.message]);
+  
   const onSubmit = async (data) => {
     data.date = dayjs(new Date()).format('DD MMMM YYYY, HH:mm:ss')
     data.event = nextEvent.title
-    
+
     try {
       await sendQuestion(data)
       setIsSubmitted(true)
@@ -33,7 +61,6 @@ const Question = () => {
       setIsSubmitted(false)
       reset()
     }
-    // setShowBanner(true);
   }
 
   return (
@@ -41,18 +68,18 @@ const Question = () => {
         {/* Contenitore generale */}
         <div className='flex flex-col pt-20 pb-14 text-slate-900 px-5 max-w-[1350px] m-auto min-h-screen items-center justify-center'>
           
-          <div className={`fixed flex flex-row top-28 bg-green-400 rounded-lg px-4 py-2 text-lg items-center text-white ${(isSubmitted && !isError) ? "": "hidden"}`}>
+          <div className={`fixed flex flex-row top-28 bg-green-400 rounded-lg px-4 py-2 text-lg items-center text-white ${(isSubmitted && !isError && showBanner) ? "": "hidden"} transition-opacity duration-1000`}>
             <div>
               Sended
             </div>
             <GrSend className='ml-2 fill-white'/>
           </div>
 
-          <div className={`fixed flex flex-row top-28 bg-red-500 rounded-lg px-4 py-2 text-lg items-center text-white ${(isSubmitted && isError)||(errors.message) ? "": "hidden"}`}>
+          <div className={`fixed flex flex-row top-28 bg-red-500 rounded-lg px-4 py-2 text-lg items-center text-white ${(isSubmitted && isError && showBanner)||(errors.message && showBanner) ? "": "hidden"}  transition-opacity duration-1000`}>
             <div>
               Error
             </div>
-            <GrSend className='ml-2 fill-white'/>
+            <BiErrorCircle className='ml-2 fill-white'/>
           </div>
           
           <div className='font-semibold text-2xl text-center sm:text-3xl md:text-3xl py-2 md:py-3'>
@@ -63,7 +90,7 @@ const Question = () => {
             <textarea placeholder='Scrivi la domanda che vorresti chiedere' {...register("message", { required: true })} className={`w-full mt-3 mb-1 p-2 rounded-md`}/>
             {errors.message && <div className='w-full text-center text-red-500 font-bold'>Message required</div>}
             <span>
-              <input type="submit" placeholder='Send' value="Send" className='text-right py-2 px-4 mt-2 cursor-pointer text-[#E4914B] bg-white rounded-md'/>
+              <input type="submit" placeholder='Send' value="Send" className='text-right py-2 px-4 mt-2 cursor-pointer text-[#E4914B] bg-white rounded-md hover:bg-white/80'/>
             </span>
           </form>
 
