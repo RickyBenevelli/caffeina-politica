@@ -15,7 +15,7 @@ const handler = async(req, res) => {
       await transporter.sendMail({
         ...mailOptions,
         text: "This is text string",
-        html: `<p>${data.message}</p>`
+        html: `<div style="display: flex; flex-direction: column; align-items: center; width: 100%;"><div style="display: flex; flex-direction: column; align-items: flex-start; width: 100%; max-width: 36rem; "><div style="font-size: 1.125rem;line-height: 1.75rem; font-weight: 700; ">${data.event}</div><div><span>Data e ora: </span><span>${data.date}</span></div><br/><div>${data.message}</div></div></div>`
       })
 
       return res.status(200).json({ message: 'Success' })

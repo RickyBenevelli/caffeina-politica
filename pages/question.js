@@ -5,16 +5,21 @@ import { useForm } from "react-hook-form";
 import dayjs from 'dayjs'
 
 import { sendQuestion } from '../lib/api.js'
+import dati from '../json/events.json'
 
 const Question = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isError, setIsError] = useState(false)
   // const [showBanner, setShowBanner] = useState(false);
   const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
+
+  const events = JSON.parse(JSON.stringify(dati))
+  const nextEvent = trovaProssimoEvento(events)
   
   const onSubmit = async (data) => {
     data.date = dayjs(new Date()).format('DD MMMM YYYY, HH:mm:ss')
-
+    data.event = nextEvent.title
+    
     try {
       await sendQuestion(data)
       setIsSubmitted(true)
@@ -68,3 +73,21 @@ const Question = () => {
 }
 
 export default Question
+
+function trovaProssimoEvento(events){
+  const oggi = new Date()
+  oggi.setDate(oggi.getDate() - 1);
+  let prossimoEvento = null
+
+  events.sort((a, b) => {
+    return new Date(a.date) - new Date(b.date);
+  })
+  for (let i = 0; i < events.length; i++) {
+    if (new Date(events[i].date) >= oggi) {
+      prossimoEvento = events[i]
+      break
+    }
+  }
+
+  return prossimoEvento
+}
