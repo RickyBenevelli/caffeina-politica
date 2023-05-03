@@ -18,9 +18,9 @@ const Articoli = ({ posts }) => {
       </div>
 
       <div className="flex overflow-x-scroll py-10 scrollbar-hide snap-x">
-        <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 snap-x">
+        <div className="flex flex-nowrap items-stretch lg:ml-40 md:ml-20 ml-10 snap-x">
           {posts.map((post) => (
-            <Card className="snap-center" key={post.slug} post={post} />
+            <Card className="snap-center h-full" key={post.slug} post={post} />
           ))}
         </div>
       </div>
