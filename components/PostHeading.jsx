@@ -21,7 +21,7 @@ const PostHeading = ({ frontmatter, readingTime }) => {
           </div>
           <div className="flex flex-row items-center text-sm">
             <CiTimer size={18} />
-            <div className="px-2">{readingTime}</div>
+            <div className="px-2">{Math.round(readingTime)} min read</div>
           </div>
         </div>
       </div>

@@ -93,7 +93,7 @@ export async function getStaticProps({ params: { slug } }) {
       mdxSource,
       frontmatter: fm,
       slug,
-      readingTime: readingTime(fileContent).text,
+      readingTime: readingTime(fileContent).minutes,
       suggested: JSON.parse(JSON.stringify(posts))
         //   filterByTag: posts
         .filter((item) =>
