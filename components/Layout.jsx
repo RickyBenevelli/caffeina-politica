@@ -11,7 +11,6 @@ const Layout = ({children}) => {
         <title>Caffeina Politica</title>
         <meta name="title" content="Caffeina Politica" />
         <meta name="description" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta name="keywords" content="caffeina, politica, reggio emilia, dibattito, giovani, giovane, politica" />
         <meta name="robots" content="index, follow" />
         <meta author="Riccardo Benevelli" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +21,7 @@ const Layout = ({children}) => {
         <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#3c323a" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
+        <link rel="alternate" href="https://www.caffeinapolitica.com" hreflang="it-it" />
 
         {/* Schema */}
         <meta itemprop="name" content="Caffeina Politica" />

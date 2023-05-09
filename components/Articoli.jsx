@@ -9,12 +9,12 @@ const Articoli = ({ posts }) => {
     <section id="articoli" className="bg-slate-700 w-full  flex flex-col m-auto p-auto pt-20 lg:pt-28 justify-center">
       
       <div className="text-center mx-auto flex items-center justify-center py-10">
-        <h1 className="absolute flex items-center justify-center font-black text-6xl text-white opacity-10">
+        <h2 className="absolute flex items-center justify-center font-black text-6xl text-white opacity-10">
           NEWS
-        </h1>
-        <h2 className="absolute flex items-center justify-center font-bold text-2xl text-[#F5F5F7]">
-          ARTICOLI
         </h2>
+        <h3 className="absolute flex items-center justify-center font-bold text-2xl text-[#F5F5F7]">
+          ARTICOLI
+        </h3>
       </div>
 
       <div className="flex overflow-x-scroll py-10 scrollbar-hide snap-x">

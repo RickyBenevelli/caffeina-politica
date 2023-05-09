@@ -9,12 +9,12 @@ const Project = () => {
     return (
         <section id='progetto' className='bg-[#AC815C] py-20 lg:py-28'>
             <div className="text-center mx-auto flex items-center justify-center py-10">
-                <h1 className="absolute flex items-center justify-center font-black text-6xl text-white opacity-10">
-                PROGETTO
-                </h1>
-                <h2 className="absolute flex items-center justify-center font-bold text-2xl text-[#F5F5F7]">
+                <h2 className="absolute flex items-center justify-center font-black text-6xl text-white opacity-10">
                 PROGETTO
                 </h2>
+                <h3 className="absolute flex items-center justify-center font-bold text-2xl text-[#F5F5F7]">
+                PROGETTO
+                </h3>
             </div>
     
             <div className='w-full flex flex-col px-5 items-center max-w-[400px] sm:max-w-[1350px] m-auto'>

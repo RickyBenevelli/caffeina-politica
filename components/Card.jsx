@@ -12,7 +12,7 @@ const Card = ({post}) => {
             <div className="w-64 h-full max-w-xs overflow-hidden rounded-lg shadow-md shadow-orange-100/30 bg-white hover:shadow-xl hover:shadow-white/20 transition-shadow duration-300 ease-in-out flex flex-col">
                 <Image src={post.frontmatter.image} alt={post.frontmatter.title} width={300} height={300} className="object-cover w-5/6 h-32 mx-auto rounded-md shadow-sm shadow-black mt-4" />
                 <p className='text-center font-light text-xs pt-2'>{dayjs(post.frontmatter.date).format('D/MM/YYYY')}</p>
-                <h1 className='font-semibold text-xl text-center leading-6 my-2 mx-2'>{post.frontmatter.title}</h1>
+                <h4 className='font-semibold text-xl text-center leading-6 my-2 mx-2'>{post.frontmatter.title}</h4>
                 <p className='text-center font-light text-xs px-3 pb-2'>
                   {post.frontmatter.excerpt}
                 </p>

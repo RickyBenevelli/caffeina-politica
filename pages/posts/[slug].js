@@ -17,6 +17,7 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
       <Head>
         <title>{frontmatter.title}</title>
         <meta name="description" content="Lo spazio di dibattito di Reggio Emilia" />
+        <meta author="Riccardo Benevelli" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
@@ -27,19 +28,19 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         <meta name="theme-color" content="#ffffff"></meta>
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.caffeinapolitica.vercel.app" />
+        <meta property="og:url" content="https://www.caffeinapolitica.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Caffeina Politica" />
         <meta property="og:description" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta property="og:image" content="favicon/favicon-32x32.png" />
+        <meta property="og:image" content="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="Lo spazio di dibattito di Reggio Emilia" />
         <meta property="twitter:domain" content="caffeinapolitica.vercel.app" />
-        <meta property="twitter:url" content="https://www.caffeinapolitica.vercel.app" />
+        <meta property="twitter:url" content="https://www.caffeinapolitica.com" />
         <meta name="twitter:title" content="Caffeina Politica" />
         <meta name="twitter:description" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta name="twitter:image" content="favicon/favicon-32x32.png" />
+        <meta name="twitter:image" content="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75" />
 
         {/* Google Search Console */}
         <meta name="google-site-verification" content="NV-KZa_aqMg8UaJdMsh9HPCkl_OyhURvg98Wp6JGw4I" />
