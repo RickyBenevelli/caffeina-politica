@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-# Host: https://caffeinapolitica.com
+Host: https://caffeinapolitica.com
 
 # Sitemaps
-# Sitemap: https://caffeinapolitica.com/sitemap.xml
+Sitemap: https://caffeinapolitica.com/sitemap.xml
