@@ -27,6 +27,7 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
         
+        
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://www.caffeinapolitica.com" />
         <meta property="og:type" content="website" />
