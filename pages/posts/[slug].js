@@ -17,8 +17,6 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
     <>
       <Head>
         <title>{frontmatter.title}</title>
-        <meta name="description" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta author="Riccardo Benevelli" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* favicons */}
@@ -30,25 +28,42 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
 
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.caffeinapolitica.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Caffeina Politica" />
-        <meta property="og:description" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta property="og:image" content="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75" />
-
         {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta property="twitter:domain" content="caffeinapolitica.com" />
-        <meta property="twitter:url" content="https://www.caffeinapolitica.com" />
-        {/* <meta name="twitter:site" content="@exampleusername"/> */}
-        <meta name="twitter:title" content="Caffeina Politica" />
-        <meta name="twitter:description" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta name="twitter:image" content="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75" />
 
         {/* Google Search Console */}
         <meta name="google-site-verification" content="NV-KZa_aqMg8UaJdMsh9HPCkl_OyhURvg98Wp6JGw4I" />
       </Head>
+
+      <NextSeo
+        title={frontmatter.title}
+        description={frontmatter.excerpt}
+        canonical={`https://www.caffeinapolitica.com/posts/${slug}`}
+        openGraph={{
+          type: "article",
+          article: {
+            publishedTime: frontmatter.date,
+            modifiedTime: frontmatter.date,
+            authors: [frontmatter.author],
+            tags: frontmatter.tags,
+          },
+          url: `https://www.caffeinapolitica.com/posts/${slug}`,
+          title: frontmatter.title,
+          description: frontmatter.excerpt,
+          images: [
+            {
+              url: "https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75",
+              alt: "Caffeina Politica",
+            },
+          ],
+          site_name: "Caffeina Politica",
+        }}
+        twitter={{
+          handle: "@caffeina_pol",
+          site: "@caffeina_pol",
+          cardType: "summary_large_image",
+        }}
+        />
+
       <div className="bg-slate-100">
         <div className="pt-24 max-w-5xl m-auto">
           <ArticleJsonLd

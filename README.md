@@ -37,6 +37,14 @@ Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il co
 
 `yarn add next-seo`
 
+### SEO:
+- Open Graph
+- Twitter Cards
+- Sitemap
+- Robots.txt
+- Schema.org JSON-LD
+- role="main" per il main content
+
 ---
 ### TO DO:
 - [ ] aggiungere una flag `evento pronto` per decidere quando mostrare i dati di un evento futuro
