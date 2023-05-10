@@ -33,7 +33,9 @@ yarn add SWR
 
 Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il colore desiderato. 
 
-`yarn add @vercel/analytics``
+`yarn add @vercel/analytics`
+
+`yarn add next-seo`
 
 ---
 ### TO DO:

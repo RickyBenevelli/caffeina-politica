@@ -3,6 +3,7 @@ import { postFileNames, postsPath, sortByDate } from "../../utils";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import readingTime from "reading-time";
+import { NextSeo } from 'next-seo';
 
 import Post from "../../components/Post";
 
@@ -19,6 +20,8 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         <meta name="description" content="Lo spazio di dibattito di Reggio Emilia" />
         <meta author="Riccardo Benevelli" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* favicons */}
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -36,8 +39,9 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="Lo spazio di dibattito di Reggio Emilia" />
-        <meta property="twitter:domain" content="caffeinapolitica.vercel.app" />
+        <meta property="twitter:domain" content="caffeinapolitica.com" />
         <meta property="twitter:url" content="https://www.caffeinapolitica.com" />
+        {/* <meta name="twitter:site" content="@exampleusername"/> */}
         <meta name="twitter:title" content="Caffeina Politica" />
         <meta name="twitter:description" content="Lo spazio di dibattito di Reggio Emilia" />
         <meta name="twitter:image" content="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75" />
