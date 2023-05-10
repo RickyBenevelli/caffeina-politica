@@ -20,6 +20,7 @@ const CalendarData = (props) => {
         name={props.event.title}
         startDate={props.event.date}
         endDate={props.event.date}
+        location={props.event.placeAndTime}
         description={props.event.description}
         performers={props.event.guest}
         url={props.event.url}

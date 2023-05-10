@@ -66,7 +66,7 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         url={`https://www.caffeinapolitica.com/posts/${slug}`}
         title={frontmatter.title}
         images={[
-          "https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75",
+          frontmatter.image,
         ]}
         keywords={frontmatter.tags}
         datePublished={frontmatter.date}
