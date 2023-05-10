@@ -3,7 +3,7 @@ import { postFileNames, postsPath, sortByDate } from "../../utils";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import readingTime from "reading-time";
-import { NextSeo, ArticleJsonLd } from 'next-seo';
+import { NextSeo, NewsArticleJsonLd } from 'next-seo';
 
 import Post from "../../components/Post";
 
@@ -27,8 +27,6 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#3c323a" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
-
-        {/* Twitter Meta Tags */}
 
         {/* Google Search Console */}
         <meta name="google-site-verification" content="NV-KZa_aqMg8UaJdMsh9HPCkl_OyhURvg98Wp6JGw4I" />
@@ -64,21 +62,23 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         }}
         />
 
+      <NewsArticleJsonLd
+        url={`https://www.caffeinapolitica.com/posts/${slug}`}
+        title={frontmatter.title}
+        images={[
+          "https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75",
+        ]}
+        keywords={frontmatter.tags}
+        datePublished={frontmatter.date}
+        dateModified={frontmatter.date}
+        authorName={frontmatter.author}
+        publisherName="Caffeina Politica"
+        publisherLogo="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75"
+        description={frontmatter.description}
+      />
+
       <div className="bg-slate-100">
         <div className="pt-24 max-w-5xl m-auto">
-          <ArticleJsonLd
-            url={`https://www.caffeinapolitica.com/posts/${slug}`}
-            title={frontmatter.title}
-            images={[
-              "https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75",
-            ]}
-            datePublished={frontmatter.date}
-            dateModified={frontmatter.date}
-            authorName={frontmatter.author}
-            publisherName="Caffeina Politica"
-            publisherLogo="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75"
-            description={frontmatter.description}
-          />
           <Post
             mdxSource={mdxSource}
             frontmatter={frontmatter}
