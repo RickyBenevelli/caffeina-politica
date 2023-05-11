@@ -14,7 +14,7 @@ const Bibliography = ({ children }) => {
         <HiArrowSmUp size={20} className={`${show? "" : "rotate-180"} transition-transform duration-500`}/>
         <span className="ml-2">Bibliography</span>
       </div>
-        <div className={`text-slate-100 text-xs lg:text-sm ${show? "" : "hidden"} transition-all duration-1000 list-decimal`}>
+        <div className={`text-slate-100 text-xs lg:text-sm ${show? "" : "hidden"} transition-all duration-1000`}>
           <hr className=" my-2" />
           {children}
         </div>
