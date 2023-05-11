@@ -37,6 +37,8 @@ Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il co
 
 `yarn add next-seo`
 
+`gatsby-plugin-mdx` per le note a piè di pagina
+
 ### SEO:
 - Open Graph
 - Twitter Cards

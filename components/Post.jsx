@@ -1,18 +1,22 @@
 import React from "react";
 import { NewsArticleJsonLd } from 'next-seo';
 import { MDXRemote } from "next-mdx-remote";
+// import remarkFootnotes from 'remark-footnotes';
 
 import PostHeading from "./PostHeading";
 import Bibliography from "./Bibliography";
 import Signature from "./Signature";
 import Suggested from "./Suggested";
+import Subtitle from "./Subtitle";
 
 const components = {
   Bibliography,
   Signature,
+  Subtitle
 };
 
 const Post = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
+  
   return (
     <>
       <NewsArticleJsonLd

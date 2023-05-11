@@ -45,7 +45,7 @@ const PostPage = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
           article: {
             publishedTime: frontmatter.date,
             modifiedTime: frontmatter.date,
-            authors: [frontmatter.author],
+            authors: frontmatter.author,
             tags: frontmatter.tags,
           },
           url: `https://www.caffeinapolitica.com/posts/${slug}`,

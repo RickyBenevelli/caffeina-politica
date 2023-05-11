@@ -21,7 +21,7 @@ const Layout = ({children}) => {
         <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#3c323a" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
-        <link rel="alternate" href="https://www.caffeinapolitica.com" hreflang="it-it" />
+        <link rel="alternate" href="https://www.caffeinapolitica.com" hrefLang="it-it" />
 
         {/* Schema */}
         {/* <meta itemprop="name" content="Caffeina Politica" />

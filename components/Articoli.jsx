@@ -48,10 +48,13 @@ export default Articoli;
 function getAuthors(posts) {
   let authors = [];
   if(posts){
-    posts.forEach((post) => {
-      if (!authors.includes(post.frontmatter.author)) {
-        authors.push(post.frontmatter.author);
+    posts.map((post) => {
+      post.frontmatter.author.forEach((author) => {
+        if (!authors.includes(author)) {
+          authors.push(author);
+        }
       }
+      );
     });
   }
   return authors;
