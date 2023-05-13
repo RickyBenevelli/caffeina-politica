@@ -37,7 +37,7 @@ const Layout = ({children}) => {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:title" content="Caffeina Politica" />
-        <meta name="twitter:description" content="Lo spazio di dibattito di Reggio Emilia" />
+        <meta name="twitter:description" content="Lo spazio di dibattito pubblico" />
         <meta name="twitter:image" content="https://www.caffeinapolitica.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ca9204f7.png&w=3840&q=75" />
 
         {/* Google Search Console */}
@@ -46,7 +46,7 @@ const Layout = ({children}) => {
       </Head>
       <DefaultSeo
         title="Caffeina Politica"
-        description="Lo spazio di dibattito di Reggio Emilia"
+        description="Lo spazio di dibattito pubblico"
         canonical="https://www.caffeinapolitica.com"
         defaultTitle="Caffeina Politica"
         languageAlternates={[

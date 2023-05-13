@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
 
             <div className='font-semibold text-2xl text-center sm:text-3xl md:text-3xl py-2 md:py-3'>
-                <h2>Lo Spazio di dibattito di Reggio Emilia</h2>
+                <h2>Lo Spazio di dibattito pubblico</h2>
             </div>
 
             {/* contenitore eventi */}

@@ -60,6 +60,18 @@ Per aggiungere i tag bisogna farlo nel file json dedicato, inserendo anche il co
 - [ ] tab search
 - [ ] commentare tutto il codice e documentare
 
+
+- [ ] questione copyright foto (chiedere a Geopop)
+- [ ] numeri di bibliografia 
+- [x] lo spazio di dibattito pubblico (senza Reggio Emilia)
+- [ ] chiedere il workflow di berlino magazine a Viola 
+- [ ] a norma (privacy)
+- [ ] foto su il progetto 
+- [ ] ospiti prox evento
+- [ ] tempo di lettura (fallo diventare 375 words X minute)
+- [ ] cambia titolo le carceri in minuscolo
+- [ ] tasto proponi un evento
+
 ### BUGS:
 
 ### SUGGERIMENTI BENNI
