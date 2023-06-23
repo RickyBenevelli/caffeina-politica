@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { Inter } from '@next/font/google'
 
 import Hero from '../components/Hero'
+import HeroArticolo from '../components/HeroArticolo'
 
 const Eventi = dynamic(() => import('../components/Eventi'))
 const Articoli = dynamic(() => import('../components/Articoli'))
@@ -24,7 +25,7 @@ export default function Home({posts}) {
 
   return (
     <>
-      <Hero/>
+      <HeroArticolo posts={posts}/>
       <EventContextProvider>
         <Eventi/>
       </EventContextProvider>
