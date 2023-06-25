@@ -31,11 +31,11 @@ const HeroArticolo = ({posts}) => {
                     <div className='flex flex-col pb-14 text-slate-900 px-5 max-w-[1350px] m-auto relative z-10' >
 
                         <div className='w-full max-sm:hidden'>
-                            <div className='font-black text-4xl text-center py-3 sm:text-5xl md:text-6xl md:pt-8 lg:text-5xl xl:text-6xl '>
+                            <div className='font-black text-4xl text-center py-3 sm:text-5xl md:text-6xl md:pt-8 lg:text-5xl xl:text-6xl bg-clip-text bg-gradient-to-r from-amber-700  to-orange-500 text-transparent'>
                                 <h1>Caffeina Politica</h1>
                             </div>
 
-                            <div className='font-semibold text-2xl text-center sm:text-3xl md:text-3xl py-2 md:py-3'>
+                            <div className='font-semibold text-2xl text-center sm:text-3xl md:text-3xl py-2 md:py-3 text-orange-200'>
                                 <h2>Lo Spazio di dibattito pubblico</h2>
                             </div>
                         </div>
