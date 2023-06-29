@@ -35,7 +35,7 @@ const Post = ({ mdxSource, frontmatter, slug, readingTime, suggested }) => {
         />
       <div className="flex flex-col px-4">
         <PostHeading frontmatter={frontmatter} readingTime={readingTime} />
-        <div className="prose lg:prose-lg m-auto mb-20">
+        <div className="prose lg:prose-lg m-auto mb-20 text-justify">
           <MDXRemote {...mdxSource} components={components} />
         </div>
         <Suggested suggested={suggested} />
