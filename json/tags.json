@@ -78,5 +78,25 @@
     {
         "tag": "Storia",
         "color": "#344254"
+    },
+    {
+        "tag": "Diritti",
+        "color": "#0C120C"
+    },
+    {
+        "tag": "Uguaglianza",
+        "color": "#7C3626"
+    },
+    {
+        "tag": "Parità di genere",
+        "color": "#3A606E"
+    },
+    {
+        "tag": "Aborto",
+        "color": "#478978"
+    },
+    {
+        "tag": "LGBTQ+",
+        "color": "#823038"
     }
 ]

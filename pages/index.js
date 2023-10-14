@@ -25,7 +25,8 @@ export default function Home({posts}) {
 
   return (
     <>
-      <HeroArticolo posts={posts}/>
+      {/* <HeroArticolo posts={posts}/> */}
+      <Hero/>
       <EventContextProvider>
         <Eventi/>
       </EventContextProvider>
