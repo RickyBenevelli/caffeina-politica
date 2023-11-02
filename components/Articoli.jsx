@@ -39,8 +39,7 @@ const Articoli = ({ posts }) => {
         <div className="text-sm py-2 px-4">
           Se vuoi collaborare alla scrittura degli articoli contattaci in privato e leggi le {" "}  
           <Link 
-            href="https://caffeinapolitica.notion.site/Linee-guida-da-rispettare-per-scrivere-su-Caffeina-Politica-78a421f2d91744d896439e4a91b70789?pvs=4" 
-            target="_blank" 
+            href="/linee-guida" 
             alt='linee guida da rispettare' 
             className="underline underline-offset-2 font-bold"
             >
