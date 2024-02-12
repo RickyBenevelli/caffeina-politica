@@ -24,6 +24,10 @@
         "color": "#077EB0"
     },
     {
+        "tag": "Integrazione",
+        "color": "#077EB0"
+    },
+    {
         "tag": "Euro",
         "color": "#224870"
     },
@@ -32,11 +36,19 @@
         "color": "#003399"
     },
     {
+        "tag": "UE",
+        "color": "#003399"
+    },
+    {
         "tag": "Giovani",
         "color": "#F8C26A"
     },
     {
         "tag": "Istruzione",
+        "color": "#6C9BCF"
+    },
+    {
+        "tag": "Propaganda",
         "color": "#6C9BCF"
     },
     {
@@ -80,6 +92,10 @@
         "color": "#344254"
     },
     {
+        "tag": "Immigrazione",
+        "color": "#0C120C"
+    },
+    {
         "tag": "Diritti",
         "color": "#0C120C"
     },
@@ -97,6 +113,10 @@
     },
     {
         "tag": "LGBTQ+",
+        "color": "#823038"
+    },
+    {
+        "tag": "Xenofobia",
         "color": "#823038"
     }
 ]
