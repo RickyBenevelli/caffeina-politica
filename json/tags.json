@@ -118,5 +118,13 @@
     {
         "tag": "Xenofobia",
         "color": "#823038"
+    },
+    {
+        "tag": "Reggio Emilia",
+        "color": "#7C3626"
+    },
+    {
+        "tag": "Sicurezza",
+        "color": "#9D1818"
     }
 ]

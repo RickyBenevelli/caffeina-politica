@@ -34,13 +34,6 @@ const Contatti = () => {
             </div>
           </Link>
 
-          <Link href={"https://www.tiktok.com/@caffeinapolitica?_t=8bhip3iWvCk"} target="_blank">
-            <div className="flex flex-col items-center my-5 px-3">
-              <FaTiktok size={40} />
-              <p className="text-xs py-2">@caffeinapolitica</p>
-            </div>
-          </Link>
-
         </div>
       </div>
     </section>
